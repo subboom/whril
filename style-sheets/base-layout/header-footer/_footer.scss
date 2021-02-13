@@ -35,47 +35,36 @@
      }
 
      .social-icons{
-        position: relative;
-        left:7.5rem;
-     .rounded-social-buttons .social-button {
-        width: 2.25rem;
-        height: 2.25rem;
-        border: 0.125rem solid transparent;
-        color: $dark-purple;
-        padding-left:1rem;
-     }
-     
-     // .rounded-social-buttons 
-     // .social-button:hover, 
-     // .rounded-social-buttons 
-     // .social-button:focus {
-     // -webkit-transform: rotate(360deg);
-     //       -ms-transform: rotate(360deg);
-     //          transform: rotate(360deg);
-     // }
+      position: relative;
+      left:7.5rem;
+   .rounded-social-buttons .social-button {
+      width: 2.25rem;
+      height: 2.25rem;
+      border: 0.125rem solid transparent;
+      color: $dark-purple;
+      padding-left:1rem;
+   }
 
-     .rounded-social-buttons 
-     .fa-apple,
-     .fa-android {
-     font-size: 1.0625rem;
-     }
+   .rounded-social-buttons {
+   font-size: 1.0625rem;
+   }
 
-     .rounded-social-buttons 
-     .social-button.apple:hover, 
-     .rounded-social-buttons 
-     .social-button.apple:focus {
-     color: #590591;
-     background: transparent;
-     }
-     .rounded-social-buttons 
-     .social-button.android:hover, 
-     .rounded-social-buttons 
-     .social-button.android:focus {
-     color: #a4c639;
-     background: transparent;
-     }
-  }
-  }
+   .rounded-social-buttons 
+   .social-button.apple:hover, 
+   .rounded-social-buttons 
+   .social-button.apple:focus {
+   color: #590591;
+   background: transparent;
+   }
+   .rounded-social-buttons 
+   .social-button.android:hover, 
+   .rounded-social-buttons 
+   .social-button.android:focus {
+   color: #a4c639;
+   background: transparent;
+   }
+}
+}
 }
 }
 @media screen 

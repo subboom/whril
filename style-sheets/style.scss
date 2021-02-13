@@ -36,15 +36,14 @@
          img{
                   position: relative;
                   top:2.5rem;
-                  left:9rem;
+                  left:7rem;
                   width:50rem;
               } 
-            video{
+            img:nth-child(2){
                position: absolute;
-               top:5rem;
-               left:23.5rem;
+               top:2rem;
+               left:20.5rem;
                width:16rem;
-               border-radius: 3.75rem;;
                animation-name: stretch; 
                animation-duration: 2.5s; 
                animation-timing-function: ease-in-out; 
@@ -66,16 +65,16 @@
       }
       
    .__right-sub-section{
-      flex: 0 30rem;
-      margin: 17.5rem 0rem 0 -6.5rem;
+      margin: 17rem 0rem;
       position: relative;
+      left:-9.5rem;
       z-index: 9;
       h2{
-         font-family: bold;
+         text-align: center;
       }
       a{
          img{
-            margin:1.5rem 1.7rem;
+            margin:1.5rem 3.25rem;
             width:12.5rem;
             &:hover{
                transition: ease-in-out .35s;

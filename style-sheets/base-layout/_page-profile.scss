@@ -37,11 +37,10 @@
    }
    h2 {
     font-family: bold;
-    font-size:2rem;
+    font-size:2.5rem;
     color:$dark-purple;
    }
    h3, h4, h5, h6 {
-   margin:0;
    font-family: 'medium';
    color:$dark-purple;
    text-shadow:none;
@@ -49,17 +48,15 @@
    p {
      font-family: 'book';
      font-size:1.1rem;
-     line-height:1.5rem;
      color:$dark-purple;  
-     margin:0;
      text-shadow:none;
    }
    ul, ol {
     list-style:none;
     margin:0;
    }
-   span {
-    font-family: 'book';
-    text-shadow: .25px .25px .25px $white;
-    font-size:36px;
+   span{
+      font-family: bold;
+      font-size:2.5rem;
+      color:$dark-purple;
    }

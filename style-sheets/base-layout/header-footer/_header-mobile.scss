@@ -10,9 +10,9 @@
          .main-logo {
             display: flex;
             justify-content:flex-start;
-            margin: 1.4rem 0 0 2.25rem;
+            margin: 1.5rem 0 0 2.25rem;
             img {
-            width:3.5rem;
+            width:4rem;
             cursor: pointer;
                &:hover {
                   animation: shake 1.5s cubic-bezier(.36,.07,.19,.97) both infinite;

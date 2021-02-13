@@ -93,9 +93,7 @@
   padding-left: 1rem;
 }
 
-.universal-footer .bottom-footer-section .inner-footer-section .social-icons .rounded-social-buttons
-.fa-apple,
-.universal-footer .bottom-footer-section .inner-footer-section .social-icons .fa-android {
+.universal-footer .bottom-footer-section .inner-footer-section .social-icons .rounded-social-buttons {
   font-size: 1.0625rem;
 }
 
@@ -180,11 +178,11 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 1.4rem 0 0 2.25rem;
+  margin: 1.5rem 0 0 2.25rem;
 }
 
 .mobile-navbar .main-logo img {
-  width: 3.5rem;
+  width: 4rem;
   cursor: pointer;
 }
 
@@ -407,21 +405,23 @@
 .header .universal-header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 17rem 17rem 17rem;
-      grid-template-columns: 17rem 17rem 17rem;
+  -ms-grid-columns: 47.5rem 10rem;
+      grid-template-columns: 47.5rem 10rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: fixed;
   top: 0;
   width: 99%;
-  height: 4.75rem;
+  height: 4rem;
   background: #F2F6F9;
   z-index: 999999;
 }
 
 .header .universal-header .main-logo {
-  margin: 1.25rem 0 0 0;
+  margin: 1.5rem 0 0 0;
+  position: relative;
+  left: 4rem;
 }
 
 .header .universal-header .main-logo a img {
@@ -458,44 +458,16 @@
   }
 }
 
-.header .universal-header .txt-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 25rem;
-}
-
-.header .universal-header .txt-menu a {
-  margin: 1.75rem .85rem;
-  font-size: 1.1rem;
-  font-family: bold;
-  color: #2B1951;
-}
-
-.header .universal-header .txt-menu a:hover {
-  opacity: .8;
-}
-
-.header .universal-header .txt-menu a:nth-child(1) {
-  margin-left: 4rem;
-}
-
 .header .universal-header button {
-  position: relative;
-  top: -.35rem;
-  left: 4.25rem;
-  margin: .9rem 0;
-  font-size: 1rem;
+  margin: .65rem 0;
+  font-size: 0.925rem;
   color: #2B1951;
   background: transparent;
-  padding: .625rem;
-  padding-left: .75rem;
-  padding-right: .5rem;
+  padding: .5rem .65rem;
   cursor: pointer;
   border: 5px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to left, #2a99f3, #9b5cec);
-  width: 7rem;
+  border-image-source: linear-gradient(to left, #4BA9FF, #9b5cec);
   font-family: bold;
   outline: none;
 }
@@ -503,7 +475,7 @@
 .header .universal-header button:hover {
   -webkit-transition: ease-out;
   transition: ease-out;
-  border-image-source: linear-gradient(to right, #2a99f3, #9b5cec);
+  border-image-source: linear-gradient(to right, #4BA9FF, #9b5cec);
 }
 
 @media screen and (max-width: 57.5rem) {
@@ -562,12 +534,11 @@ h1 {
 
 h2 {
   font-family: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #2B1951;
 }
 
 h3, h4, h5, h6 {
-  margin: 0;
   font-family: 'medium';
   color: #2B1951;
   text-shadow: none;
@@ -576,9 +547,7 @@ h3, h4, h5, h6 {
 p {
   font-family: 'book';
   font-size: 1.1rem;
-  line-height: 1.5rem;
   color: #2B1951;
-  margin: 0;
   text-shadow: none;
 }
 
@@ -588,9 +557,9 @@ ul, ol {
 }
 
 span {
-  font-family: 'book';
-  text-shadow: 0.25px 0.25px 0.25px #f6f6f6;
-  font-size: 36px;
+  font-family: bold;
+  font-size: 2.5rem;
+  color: #2B1951;
 }
 
 /* CORE PAGE PROFILE */
@@ -678,7 +647,7 @@ span {
 .legal-bubble-2 .legal-section .terms .text a {
   font-size: .975rem;
   font-family: medium;
-  color: #2a99f3;
+  color: #4BA9FF;
 }
 
 .legal-bubble-2 .legal-section .terms .text a:hover {
@@ -786,7 +755,7 @@ span {
 .privacy-bubble-2 .privacy-section .terms .text a {
   font-size: .975rem;
   font-family: medium;
-  color: #2a99f3;
+  color: #4BA9FF;
 }
 
 .privacy-bubble-2 .privacy-section .terms .text a:hover {
@@ -885,7 +854,7 @@ span {
 .cookies-bubble-2 .cookies-section .terms .text a {
   font-size: .975rem;
   font-family: medium;
-  color: #2a99f3;
+  color: #4BA9FF;
 }
 
 .cookies-bubble-2 .cookies-section .terms .text a:hover {
@@ -2216,8 +2185,8 @@ header a img:hover {
   border-radius: .35rem;
   font-family: bold;
   width: 8rem;
-  background: -webkit-gradient(linear, right top, left top, from(#2a99f3), to(#9b5cec));
-  background: linear-gradient(to left, #2a99f3, #9b5cec);
+  background: -webkit-gradient(linear, right top, left top, from(#4BA9FF), to(#9b5cec));
+  background: linear-gradient(to left, #4BA9FF, #9b5cec);
 }
 
 .first-signup-bubble .form button:hover {
@@ -2256,16 +2225,15 @@ header a img:hover {
 .__first-index-section .__left-sub-section .__img img {
   position: relative;
   top: 2.5rem;
-  left: 9rem;
+  left: 7rem;
   width: 50rem;
 }
 
-.__first-index-section .__left-sub-section .__img video {
+.__first-index-section .__left-sub-section .__img img:nth-child(2) {
   position: absolute;
-  top: 5rem;
-  left: 23.5rem;
+  top: 2rem;
+  left: 20.5rem;
   width: 16rem;
-  border-radius: 3.75rem;
   -webkit-animation-name: stretch;
           animation-name: stretch;
   -webkit-animation-duration: 2.5s;
@@ -2307,20 +2275,18 @@ header a img:hover {
 }
 
 .__first-index-section .__right-sub-section {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 30rem;
-          flex: 0 30rem;
-  margin: 17.5rem 0rem 0 -6.5rem;
+  margin: 17rem 0rem;
   position: relative;
+  left: -9.5rem;
   z-index: 9;
 }
 
 .__first-index-section .__right-sub-section h2 {
-  font-family: bold;
+  text-align: center;
 }
 
 .__first-index-section .__right-sub-section a img {
-  margin: 1.5rem 1.7rem;
+  margin: 1.5rem 3.25rem;
   width: 12.5rem;
 }
 

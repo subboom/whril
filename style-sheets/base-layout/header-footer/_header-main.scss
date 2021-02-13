@@ -2,17 +2,19 @@
 .header {
    .universal-header {
       display: grid;
-      grid-template-columns: 17rem 17rem 17rem;
+      grid-template-columns: 47.5rem 10rem;
       justify-content: center;
       position: fixed;
       top:0;
       width: 99%;
-      height:4.75rem;
+      height:4rem;
       background: $superwhite;
       z-index:999999;
       
       .main-logo {
-         margin: 1.25rem 0 0 0;
+         margin: 1.5rem 0 0 0;
+         position: relative;
+         left:4rem;
          a {
             img{
                width:4rem;
@@ -42,29 +44,9 @@
          }
       }
 
-      .txt-menu {
-         display: flex;
-         width:25rem;
-         a {
-               margin: 1.75rem .85rem; // moves txt menu up/down and adds margin between txt
-               font-size:1.1rem;
-               font-family: bold;
-               color:$dark-purple;
-               &:hover{             
-                  opacity:.8; //hover opac
-               }
-            }
-            a:nth-child(1){
-               margin-left:4rem; //moves main text bar menu to middle of menu bar
-            }
-      }
-
       button{
-         position: relative;
-         top:-.35rem;
-         left:4.25rem;
-         margin:.9rem 0;
-         @include signup-btn($size:1rem);
+         margin:.65rem 0;
+         @include signup-btn($size:.925rem);
      }
    }
 }

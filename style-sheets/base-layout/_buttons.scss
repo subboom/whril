@@ -46,14 +46,11 @@
   font-size:$size;   
   color: $color;
   background:$bg; 
-  padding:.625rem;
-  padding-left:.75rem;
-  padding-right:.5rem;
+  padding:.5rem .65rem;
   cursor:pointer;
   border: 5px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, $blue, $purple);
-  width:7rem;
   font-family: bold;
   outline:none;
   &:hover{
