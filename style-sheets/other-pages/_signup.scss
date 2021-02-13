@@ -1,0 +1,92 @@
+header{
+    margin:1.5rem 0 1.2rem 0;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+
+    a{
+        margin-right:1.5rem;
+    img{
+        width:5rem;
+        &:hover {
+            animation: shake 1.5s cubic-bezier(.36,.07,.19,.97) both infinite;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 100%;
+          }
+          @keyframes shake {
+            10%, 90% {
+              transform: translate3d(-1px, 0, 0);
+            }
+            20%, 80% {
+              transform: translate3d(2px, 0, 0);
+            }
+          
+            30%, 50%, 70% {
+              transform: translate3d(-4px, 0, 0);
+            }
+          
+            40%, 60% {
+              transform: translate3d(4px, 0, 0);
+            }
+          }
+    }
+   }
+}
+
+.first-signup-bubble{
+    display: flex;
+    justify-content: center;
+    text-align:center;
+
+   .form{
+       width:27.5rem;
+    h2{
+        font-size:1.5rem;
+    }
+
+    form{
+        display:flex;
+        flex-direction: column;
+        text-align: left;
+         label{
+            font-size:.825rem;
+            font-family:medium;
+            padding:1.5rem 0 .5rem 0;
+         }
+ 
+         input{
+            padding:.65rem 1rem .65rem 1rem;
+            outline:none;
+            font-family: book;
+            cursor:pointer;
+            border:solid 1px #ccc;
+            border-radius: .5rem;
+            background:transparent;
+            font-size:.875rem;
+         }
+          
+    }
+    .terms{
+        margin: 1rem 0 .75rem 0;
+        p{
+            padding-bottom:.5rem;
+            font-size:.775rem;
+            a{
+                font-size:.775rem;
+                color:rgb(81, 20, 151);
+                &:hover {
+                    color:$dark-purple;
+                }
+            }   
+        }
+    }
+    
+    button{
+        @include darkpurple-square-btn();
+        width:8rem;
+        background:linear-gradient(to left, $blue, $purple);
+      }
+   }
+  
+   }      

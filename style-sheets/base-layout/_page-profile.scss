@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+   }
+   html, body {
+      margin:0;
+      padding:0;
+      width:100%;
+      height:100%;
+      background:$superwhite;
+      position: relative;
+      z-index: 1;
+      overflow:hidden;
+   }
+   body{
+      overflow-y: scroll;
+   }
+   main{
+      background:$superwhite;
+   }
+   img {
+    display:block;
+    width:100%;
+    height:auto;
+    outline:none;
+    border:none;
+   }
+   a{
+      text-decoration:none;
+      font-family: 'book';
+   }
+   h1{
+      font-size:4.75rem;
+      font-family: bold;
+      color:$dark-purple;
+   }
+   h2 {
+    font-family: bold;
+    font-size:2rem;
+    color:$dark-purple;
+   }
+   h3, h4, h5, h6 {
+   margin:0;
+   font-family: 'medium';
+   color:$dark-purple;
+   text-shadow:none;
+   }
+   p {
+     font-family: 'book';
+     font-size:1.1rem;
+     line-height:1.5rem;
+     color:$dark-purple;  
+     margin:0;
+     text-shadow:none;
+   }
+   ul, ol {
+    list-style:none;
+    margin:0;
+   }
+   span {
+    font-family: 'book';
+    text-shadow: .25px .25px .25px $white;
+    font-size:36px;
+   }

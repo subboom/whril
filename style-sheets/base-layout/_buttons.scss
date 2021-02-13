@@ -1,0 +1,63 @@
+// standard button
+@mixin darkpurple-square-btn($bg:linear-gradient(65deg, $dark-purple 0%, $dark-purple 30%, $dark-purple2 95%), $size:.925rem, $color:$superwhite) {
+  outline:none;
+  text-shadow: none;
+  text-decoration: none;
+  font-size:$size;   
+  color: $color;
+  background:$bg; 
+  padding:1rem;
+  padding-left:1.25rem;
+  padding-right:1.25rem;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.225);
+  cursor:pointer;
+  border:none;
+  border-radius: .35rem;
+  font-family: bold;
+  &:hover{
+  transition: ease-in-out .35s;
+  transform: translateY(-.15rem);
+}
+}
+
+// standard button
+@mixin colorful-square-btn($bg:linear-gradient(155deg, $blue 0%, $green 25%, $red 40%, $red 60%, $green 80%, $blue 95%), $size:.925rem, $color:$dark-purple) {
+  outline:none;
+  text-shadow: none;
+  text-decoration: none;
+  font-size:$size;   
+  color: $color;
+  background:$bg; 
+  padding:1rem;
+  padding-left:1.25rem;
+  padding-right:1.25rem;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.225);
+  cursor:pointer;
+  border:none;
+  border-radius: .35rem;
+  font-family: bold;
+    &:hover{
+  transition: ease-in-out .35s;
+  transform: translateY(-.15rem);
+}
+}
+
+@mixin signup-btn($bg:transparent, $size:.925rem, $color:$dark-purple){
+  font-size:$size;   
+  color: $color;
+  background:$bg; 
+  padding:.625rem;
+  padding-left:.75rem;
+  padding-right:.5rem;
+  cursor:pointer;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, $blue, $purple);
+  width:7rem;
+  font-family: bold;
+  outline:none;
+  &:hover{
+  transition: ease-out;
+  border-image-source: linear-gradient(to right, $blue, $purple);
+}
+}

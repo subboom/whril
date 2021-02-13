@@ -1,0 +1,141 @@
+// MAIN HEADER NAV BAR //
+      .mobile-navbar {
+         display:none;
+         position: fixed;
+         top:0rem;
+         width: 98.65%;
+         height: 4.75rem; //main menu height
+         background:$superwhite;
+         z-index: 9999;
+         .main-logo {
+            display: flex;
+            justify-content:flex-start;
+            margin: 1.4rem 0 0 2.25rem;
+            img {
+            width:3.5rem;
+            cursor: pointer;
+               &:hover {
+                  animation: shake 1.5s cubic-bezier(.36,.07,.19,.97) both infinite;
+                  transform: translate3d(0, 0, 0);
+                  backface-visibility: hidden;
+                  perspective: 100%;
+               }
+               @keyframes shake {
+                  10%, 90% {
+                  transform: translate3d(-1px, 0, 0);
+                  }
+                  20%, 80% {
+                  transform: translate3d(2px, 0, 0);
+                  }
+               
+                  30%, 50%, 70% {
+                  transform: translate3d(-4px, 0, 0);
+                  }
+               
+                  40%, 60% {
+                  transform: translate3d(4px, 0, 0);
+                  }
+               }
+            }
+         }
+         
+         .nav-btns {
+            display:flex;
+            justify-content: flex-end;
+            .signup-btn {
+               position: absolute;
+               top: 1.6rem;  // controls "buy now, sign up btn" beside berger menu
+               right:3.75rem;
+
+               a {
+                  @include darkpurple-square-btn(
+                     $bg:$white,
+                     $color:$secondblack,
+                     $size:.75rem
+                  );
+                  padding:.65rem 1rem .65rem 1rem;
+               }
+            }
+         }
+         
+      // INSIDE MENU //   
+      .navlinks {
+      position: fixed;
+      top:4.75rem; // should match main menu height
+      width:100%;
+      height:100rem;
+      background: $superwhite;
+      clip-path: circle(0 at 0% 0%);
+      -webkit-clip-path: circle(0 at 0% 0%);
+      transition: all .5s ease-out;
+      li {  
+         display:flex;
+         align-items: center;
+         flex-direction: column;
+         margin:1.5rem 0 0 0; // moves nav burger sublinks up/down/sidetoside
+         a {
+            padding-bottom:1rem;
+            font-size:3rem;
+            font-family: 'bold';
+            color: $dark-purple;
+            animation: fadeIn ease 8s;
+                  @keyframes fadeIn {
+                     0% {opacity:0;}
+                     100% {opacity:1;}
+                  }
+            }
+         }
+      }
+      .navshow {
+         transition: all .5s ease;
+         clip-path: circle(100rem at 100% 30%);
+         -webkit-clip-path: circle(100rem at 100% 30%);
+         pointer-events: all;
+      }
+   //BURGER MENU ICON //
+   .burger-menu{
+      display: flex;
+      justify-content: flex-end;
+   .burger{
+      position: absolute;
+      top:-.25rem;   
+      right:.5rem;        // controls burger menu location on mobile screen
+      cursor: pointer;
+      transition: transform 400ms;
+      user-select: none;
+    }
+    .hamRotate.active {
+      transform: rotate(45deg);
+    }
+    .hamRotate180.active {
+      transform: rotate(180deg);
+    }
+    .line {
+      fill:none;
+      transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+      stroke:$dark-purple;
+      stroke-width:4;
+      stroke-linecap: round;
+    }
+    .ham1 .top {
+      stroke-dasharray: 40 139;
+    }
+    .ham1 .bottom {
+      stroke-dasharray: 40 180;
+    }
+    .ham1.active .top {
+      stroke-dashoffset: -98px;
+    }
+    .ham1.active .bottom {
+      stroke-dashoffset: -138px;
+    }
+   }
+   }
+   @media screen 
+   and (max-width:23.4375rem){
+      .nav-btns {
+         .login-btn{
+            display: none;
+         }
+      }
+   }

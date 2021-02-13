@@ -1,0 +1,81 @@
+// MAIN HEADER NAV BAR //
+.header {
+   .universal-header {
+      display: grid;
+      grid-template-columns: 17rem 17rem 17rem;
+      justify-content: center;
+      position: fixed;
+      top:0;
+      width: 99%;
+      height:4.75rem;
+      background: $superwhite;
+      z-index:999999;
+      
+      .main-logo {
+         margin: 1.25rem 0 0 0;
+         a {
+            img{
+               width:4rem;
+               &:hover {
+                  animation: shake 1.25s cubic-bezier(.36,.07,.19,.97) both infinite;
+                  transform: translate3d(0, 0, 0);
+                  backface-visibility: hidden;
+                  perspective: 100%;
+                }
+                @keyframes shake {
+                  10%, 90% {
+                    transform: translate3d(-.5px, 0, 0);
+                  }
+                  20%, 80% {
+                    transform: translate3d(1px, 0, 0);
+                  }
+                
+                  30%, 50%, 70% {
+                    transform: translate3d(-2px, 0, 0);
+                  }
+                
+                  40%, 60% {
+                    transform: translate3d(2px, 0, 0);
+                  }
+                }
+            }
+         }
+      }
+
+      .txt-menu {
+         display: flex;
+         width:25rem;
+         a {
+               margin: 1.75rem .85rem; // moves txt menu up/down and adds margin between txt
+               font-size:1.1rem;
+               font-family: bold;
+               color:$dark-purple;
+               &:hover{             
+                  opacity:.8; //hover opac
+               }
+            }
+            a:nth-child(1){
+               margin-left:4rem; //moves main text bar menu to middle of menu bar
+            }
+      }
+
+      button{
+         position: relative;
+         top:-.35rem;
+         left:4.25rem;
+         margin:.9rem 0;
+         @include signup-btn($size:1rem);
+     }
+   }
+}
+
+@media screen and (max-width: 57.5rem) {
+   .header{
+      .universal-header {
+         display:none;
+      }
+      .mobile-navbar{
+         display: initial;
+      }
+   }
+}

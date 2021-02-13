@@ -1,0 +1,91 @@
+.privacy-bubble-1{
+  margin-top:5rem;
+  .privacy-section{
+  display:flex;
+  justify-content: center;
+  .title{
+    max-width:55rem;
+    .text{
+      h1{
+        font-family: book;
+        font-weight:100;
+        font-size:2rem;
+        text-align: center;
+      }
+      p{
+          padding:1.5rem 0 1.5rem 0;
+          font-size:.825rem;
+          text-align: center;
+          color:$grey;
+      }
+      p:nth-child(3),
+      p:nth-child(4){
+        padding:2rem 2rem 0 2rem;
+        font-size:.975rem;
+        line-height:2rem;
+        text-align: left;
+        color:$secondblack;
+      }
+    }
+  }
+}
+}
+
+.privacy-bubble-2{
+  display:flex;
+  justify-content: center;
+  margin:1rem 0 12.50rem 0;
+  .privacy-section{
+  .terms{
+    margin-top:3rem;
+    max-width:55rem;
+    text-align: left;
+    align-items: center;
+    align-content: center;
+
+    .text{
+      h1{
+        font-family: book;
+        font-weight: 100;
+        font-size:1.15rem;
+        padding:0 1.25rem;
+      }
+      h2 {
+        font-family: book;
+        font-weight: 100;
+        padding:2rem 1.25rem 0rem 1.25rem;
+        font-size:1.15rem;
+      }
+      p{
+        padding:1rem 2rem 0 2rem;
+        font-size:.975rem;
+        line-height:2rem;
+        text-align: left;
+      }
+      a{
+        font-size:.975rem;
+        font-family: medium;
+        color:$blue;
+      }
+        a:hover{
+          opacity: .85;
+        }
+
+        ul{
+          padding-left:5rem;
+          li{
+            list-style-type: disc;;
+            max-width: 40rem;
+            
+            p{
+              padding:1rem .75rem 0 .75rem;
+              font-size:.975rem;
+              line-height:2rem;
+              text-align: left;
+            }
+          }
+        }
+    }
+  }
+}
+}
