@@ -1658,8 +1658,8 @@ span {
 .__first-index-section .__left-sub-section .__img img:nth-child(2) {
   margin-left: 12.5rem;
   position: absolute;
-  top: 4.5rem;
-  width: 17rem;
+  top: 7rem;
+  width: 15rem;
   -webkit-animation-name: stretch;
           animation-name: stretch;
   -webkit-animation-duration: 2.5s;
@@ -1703,7 +1703,7 @@ span {
 .__first-index-section .__right-sub-section {
   margin-left: 18rem;
   position: absolute;
-  top: 20rem;
+  top: 19.5rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
