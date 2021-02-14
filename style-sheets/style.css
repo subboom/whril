@@ -1768,6 +1768,9 @@ span {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .__first-index-section .__left-sub-section .__img {
+    margin-top: -.5rem;
+  }
   .__first-index-section .__left-sub-section .__img img {
     width: 33rem;
   }
@@ -1776,7 +1779,7 @@ span {
   }
   .__first-index-section .__right-sub-section {
     margin-left: 0;
-    top: 16rem;
+    top: 14rem;
   }
   .__first-index-section .__right-sub-section h2, .__first-index-section .__right-sub-section span {
     font-size: 2rem;
