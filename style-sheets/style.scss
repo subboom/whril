@@ -4,7 +4,6 @@
 'base-layout/colors', // std color pallet
 'base-layout/buttons', //standard pg btns
 'base-layout/header-footer/footer', //single footer for all screen sizes
-'base-layout/header-footer/header-mobile', 
 'base-layout/header-footer/header-main', //header for ipad/desktop size
 'base-layout/page-profile'; /* CORE PAGE PROFILE */
 
@@ -12,16 +11,14 @@
 @import 
 'legal/legal', 
 'legal/privacy',
-'legal/cookies',
 
 'jobs/jobs',
 'jobs/jobs-page', 
 
-'other-pages/topics',
 'other-pages/signup';
 
 .__first-index-section{
-   margin-bottom:2.5rem;
+   margin-bottom:9rem;
    display: flex;
    justify-content: center;
    animation: fadeIn ease 1.5s;
@@ -31,19 +28,14 @@
    }
    .__left-sub-section{
       .__img{
-         position: relative;
-         top:0;
          img{
-                  position: relative;
-                  top:2.5rem;
-                  left:7rem;
                   width:50rem;
               } 
             img:nth-child(2){
+               margin-left: 12.5rem;
                position: absolute;
-               top:2rem;
-               left:20.5rem;
-               width:16rem;
+               top:4.5rem;
+               width:17rem;
                animation-name: stretch; 
                animation-duration: 2.5s; 
                animation-timing-function: ease-in-out; 
@@ -65,10 +57,10 @@
       }
       
    .__right-sub-section{
-      margin: 17rem 0rem;
-      position: relative;
-      left:-9.5rem;
-      z-index: 9;
+      margin-left:18rem;
+      position: absolute;
+      top:20rem;
+      align-self: center;
       h2{
          text-align: center;
       }
@@ -89,50 +81,26 @@
       }
    }
 }
-
-@media screen and (max-width: 67.5rem)
-              and (min-width: 62rem) {
-               .__first-index-section{
-                  margin-bottom:2.5rem;
-                  .__left-sub-section{
-                     .__img{
-                        img{
-                                 top:3rem;
-                                 left:5rem;
-                             } 
-                           video{
-                              top:6rem;
-                              left:19rem;
-                           }
-                           }
-                     }
-                  .__right-sub-section{
-                     margin: 17.5rem 0rem 0 -11rem;
-                  }
-               }
-}
-@media screen and (max-width: 62rem)
+@media screen and (max-width: 60rem)
               and (min-width: 45rem) {
                .__first-index-section{
-                  margin-bottom:2.5rem;
+                  margin-bottom:0;
                   .__left-sub-section{
                      .__img{
                         img{
-                                 top:3rem;
-                                 left:5rem;
-                                 width:40rem;
-                             } 
-                           video{
-                              top:4rem;
-                              left:14.5rem;
-                              width:14rem;
+                           width: 47.5rem;
+                        }
+                           img:nth-child(2){
+                              margin-left:12.5rem;
+                              top:10rem;
+                              width:13rem;
                            }
                            }
                      }
-                     
                   .__right-sub-section{
-                     margin: 15.5rem 0rem 0 -9rem;
-                     h2{
+                     margin-top: 1.5rem;
+                     margin-left:12.5rem;
+                     h2, span{
                         font-size:1.5rem;
                      }
                      a{
@@ -147,34 +115,25 @@
 
 @media screen and (max-width: 45rem){
    .__first-index-section{
+      margin-bottom: 5rem;
    display: flex;
-   justify-content: center;
-   flex-direction: column;
    .__left-sub-section{
       align-self: center;
       .__img{
          img{
-                  top:2.25rem;
-                  left:0rem;
-                  width:30rem;
+                  width:33rem;
               } 
-              video{
-               top:2.25rem;
-               left:8rem;
-               width:11rem;
-               border-radius: 2rem;
+              img:nth-child(2){
+                 display: none;
               }
             }
       }
       
    .__right-sub-section{
-      display: flex;
-      align-self: center;
-      align-items: center;
-      flex-direction: column;
-      margin:3.25rem 0 -18rem 0;
-      h2{
-         font-size:1.5rem
+      margin-left: 0;
+      top:17rem;
+      h2,span{
+         font-size:2rem
       }
       a{
          img{

@@ -1,23 +1,11 @@
 // MAIN HEADER NAV BAR //
 .header {
    .universal-header {
-      display: grid;
-      grid-template-columns: 47.5rem 10rem;
-      justify-content: center;
-      position: fixed;
-      top:0;
-      width: 99%;
-      height:4rem;
-      background: $superwhite;
-      z-index:999999;
-      
+      padding:0.5rem 0rem;
       .main-logo {
-         margin: 1.5rem 0 0 0;
-         position: relative;
-         left:4rem;
          a {
             img{
-               width:4rem;
+               width:6rem;
                &:hover {
                   animation: shake 1.25s cubic-bezier(.36,.07,.19,.97) both infinite;
                   transform: translate3d(0, 0, 0);
@@ -42,22 +30,6 @@
                 }
             }
          }
-      }
-
-      button{
-         margin:.65rem 0;
-         @include signup-btn($size:.925rem);
-     }
-   }
-}
-
-@media screen and (max-width: 57.5rem) {
-   .header{
-      .universal-header {
-         display:none;
-      }
-      .mobile-navbar{
-         display: initial;
       }
    }
 }

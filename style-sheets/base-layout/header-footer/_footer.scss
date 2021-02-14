@@ -6,13 +6,12 @@
   display: flex;
   justify-content: center;
   .inner-footer-section{
-     padding:2.5rem 0rem;
+     padding:2rem 0rem;
      border-top: 1px solid rgb(236, 236, 236);
      display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-columns: 1fr 1fr;
      grid-gap:3rem;
      p{
-        padding-left:3rem; //offset by .legal-section a padding-left
         font-size:.825rem;
         font-family: book;
         color:$dark-purple;
@@ -21,49 +20,18 @@
         display: flex;
         flex-direction: row;
         position: relative;
-        left:0.1rem;
+        z-index: 99;
         a {
-           padding-bottom:.5rem;
-           margin-left:1.5rem; //margin between legal sectiont text
+         padding-bottom: .5rem;
+           margin-left: 1.5rem; //margin between legal sectiont text
            font-size:.825rem;
            font-family: book;
            color:$dark-purple;
            &:hover {
-              border-bottom: 1px solid #ede1f3;
+              border-bottom: 1px solid #ede0f3;
            }
         }
      }
-
-     .social-icons{
-      position: relative;
-      left:7.5rem;
-   .rounded-social-buttons .social-button {
-      width: 2.25rem;
-      height: 2.25rem;
-      border: 0.125rem solid transparent;
-      color: $dark-purple;
-      padding-left:1rem;
-   }
-
-   .rounded-social-buttons {
-   font-size: 1.0625rem;
-   }
-
-   .rounded-social-buttons 
-   .social-button.apple:hover, 
-   .rounded-social-buttons 
-   .social-button.apple:focus {
-   color: #590591;
-   background: transparent;
-   }
-   .rounded-social-buttons 
-   .social-button.android:hover, 
-   .rounded-social-buttons 
-   .social-button.android:focus {
-   color: #a4c639;
-   background: transparent;
-   }
-}
 }
 }
 }
@@ -82,7 +50,7 @@ and (max-width: 57.5rem) {
       grid-gap:0rem;
          p{
             padding:0;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
          }
         .legal-section{
            display: flex;
@@ -94,10 +62,6 @@ and (max-width: 57.5rem) {
                  border-bottom:none;
               }
            }
-        }
-        .social-icons{
-           margin-top:.5rem;
-           margin-left:-8.3rem;
         }
       }
    }
