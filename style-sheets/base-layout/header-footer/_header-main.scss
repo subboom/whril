@@ -1,7 +1,8 @@
 // MAIN HEADER NAV BAR //
-.header {
-   .universal-header {
-      padding:0.5rem 0rem;
+header {
+  margin:2rem 0;
+  display: flex;
+  justify-content: center;
       .main-logo {
          a {
             img{
@@ -32,4 +33,3 @@
          }
       }
    }
-}

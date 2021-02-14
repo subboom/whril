@@ -123,15 +123,21 @@
   }
 }
 
-.header .universal-header {
-  padding: 0.5rem 0rem;
+header {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.header .universal-header .main-logo a img {
+header .main-logo a img {
   width: 6rem;
 }
 
-.header .universal-header .main-logo a img:hover {
+header .main-logo a img:hover {
   -webkit-animation: shake 1.25s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
           animation: shake 1.25s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
   -webkit-transform: translate3d(0, 0, 0);
@@ -256,10 +262,6 @@ span {
 }
 
 /* CORE PAGE PROFILE */
-.legal-bubble-1 {
-  margin-top: 5rem;
-}
-
 .legal-bubble-1 .legal-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,10 +363,6 @@ span {
   font-size: .975rem;
   line-height: 2rem;
   text-align: left;
-}
-
-.privacy-bubble-1 {
-  margin-top: 5rem;
 }
 
 .privacy-bubble-1 .privacy-section {
@@ -1540,55 +1538,6 @@ span {
   font-size: .875rem;
 }
 
-header {
-  margin: 1.5rem 0 1.2rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
-header a {
-  margin-right: 1.5rem;
-}
-
-header a img {
-  width: 5rem;
-}
-
-header a img:hover {
-  -webkit-animation: shake 1.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
-          animation: shake 1.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-perspective: 100%;
-          perspective: 100%;
-}
-
-@keyframes shake {
-  10%, 90% {
-    -webkit-transform: translate3d(-1px, 0, 0);
-            transform: translate3d(-1px, 0, 0);
-  }
-  20%, 80% {
-    -webkit-transform: translate3d(2px, 0, 0);
-            transform: translate3d(2px, 0, 0);
-  }
-  30%, 50%, 70% {
-    -webkit-transform: translate3d(-4px, 0, 0);
-            transform: translate3d(-4px, 0, 0);
-  }
-  40%, 60% {
-    -webkit-transform: translate3d(4px, 0, 0);
-            transform: translate3d(4px, 0, 0);
-  }
-}
-
 .first-signup-bubble {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1809,7 +1758,7 @@ header a img:hover {
 
 @media screen and (max-width: 45rem) {
   .__first-index-section {
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1827,7 +1776,7 @@ header a img:hover {
   }
   .__first-index-section .__right-sub-section {
     margin-left: 0;
-    top: 17rem;
+    top: 16rem;
   }
   .__first-index-section .__right-sub-section h2, .__first-index-section .__right-sub-section span {
     font-size: 2rem;
