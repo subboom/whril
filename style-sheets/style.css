@@ -124,6 +124,8 @@
 }
 
 header {
+  position: relative;
+  z-index: 99999;
   margin: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1631,7 +1633,6 @@ span {
 }
 
 .__first-index-section {
-  margin-bottom: 9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1651,15 +1652,23 @@ span {
   }
 }
 
+.__first-index-section .__left-sub-section {
+  position: relative;
+  left: 7.5rem;
+}
+
 .__first-index-section .__left-sub-section .__img img {
-  width: 50rem;
+  position: relative;
+  top: -3rem;
+  width: 55rem;
 }
 
 .__first-index-section .__left-sub-section .__img img:nth-child(2) {
-  margin-left: 12.5rem;
+  margin-left: 13rem;
   position: absolute;
-  top: 7rem;
-  width: 15rem;
+  top: -1.5rem;
+  width: 17.5rem;
+  border-radius: 1rem;
   -webkit-animation-name: stretch;
           animation-name: stretch;
   -webkit-animation-duration: 2.5s;
@@ -1701,9 +1710,10 @@ span {
 }
 
 .__first-index-section .__right-sub-section {
-  margin-left: 18rem;
-  position: absolute;
-  top: 19.5rem;
+  position: relative;
+  top: -9.5rem;
+  left: -12rem;
+  z-index: 999;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1739,13 +1749,12 @@ span {
     width: 47.5rem;
   }
   .__first-index-section .__left-sub-section .__img img:nth-child(2) {
-    margin-left: 12.5rem;
-    top: 10rem;
-    width: 13rem;
+    margin-left: 11rem;
+    top: -2rem;
+    width: 15rem;
   }
   .__first-index-section .__right-sub-section {
-    margin-top: 1.5rem;
-    margin-left: 12.5rem;
+    left: -10rem;
   }
   .__first-index-section .__right-sub-section h2, .__first-index-section .__right-sub-section span {
     font-size: 1.5rem;
@@ -1769,7 +1778,7 @@ span {
         align-self: center;
   }
   .__first-index-section .__left-sub-section .__img {
-    margin-top: -.5rem;
+    left: 8rem;
   }
   .__first-index-section .__left-sub-section .__img img {
     width: 33rem;
@@ -1778,8 +1787,8 @@ span {
     display: none;
   }
   .__first-index-section .__right-sub-section {
-    margin-left: 0;
-    top: 14rem;
+    top: -5rem;
+    left: -16.25rem;
   }
   .__first-index-section .__right-sub-section h2, .__first-index-section .__right-sub-section span {
     font-size: 2rem;

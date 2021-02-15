@@ -18,7 +18,6 @@
 'other-pages/signup';
 
 .__first-index-section{
-   margin-bottom:9rem;
    display: flex;
    justify-content: center;
    animation: fadeIn ease 1.5s;
@@ -27,15 +26,19 @@
       100% {opacity:1;}
    }
    .__left-sub-section{
+      position: relative;
+      left:7.5rem;
       .__img{
-         img{
-                  width:50rem;
+         img{  
+                  position: relative;
+                  top:-3rem;
+                  width:55rem;
               } 
             img:nth-child(2){
-               margin-left: 12.5rem;
+               margin-left: 13rem;
                position: absolute;
-               top:7rem;
-               width:15rem;
+               top:-1.5rem;
+               width:17.5rem;border-radius: 1rem;
                animation-name: stretch; 
                animation-duration: 2.5s; 
                animation-timing-function: ease-in-out; 
@@ -57,9 +60,10 @@
       }
       
    .__right-sub-section{
-      margin-left:18rem;
-      position: absolute;
-      top:19.5rem;
+      position: relative;
+      top:-9.5rem;
+      left:-12rem;
+      z-index: 999;
       align-self: center;
       h2{
          text-align: center;
@@ -91,15 +95,14 @@
                            width: 47.5rem;
                         }
                            img:nth-child(2){
-                              margin-left:12.5rem;
-                              top:10rem;
-                              width:13rem;
+                              margin-left:11rem;
+                              top:-2rem;
+                              width:15rem;
                            }
                            }
                      }
                   .__right-sub-section{
-                     margin-top: 1.5rem;
-                     margin-left:12.5rem;
+                     left:-10rem;
                      h2, span{
                         font-size:1.5rem;
                      }
@@ -116,11 +119,11 @@
 @media screen and (max-width: 45rem){
    .__first-index-section{
       margin-bottom: 8rem;
-   display: flex;
+      display: flex;
    .__left-sub-section{
       align-self: center;
       .__img{
-         margin-top:-.5rem;
+         left:8rem;
          img{
                   width:33rem;
               } 
@@ -131,8 +134,8 @@
       }
       
    .__right-sub-section{
-      margin-left: 0;
-      top:14rem;
+      top:-5rem;
+      left: -16.25rem;
       h2,span{
          font-size:2rem
       }

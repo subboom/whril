@@ -1,5 +1,7 @@
 // MAIN HEADER NAV BAR //
 header {
+  position: relative;
+  z-index: 99999;
   margin:2rem 0;
   display: flex;
   justify-content: center;
