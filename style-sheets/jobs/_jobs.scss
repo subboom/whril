@@ -7,7 +7,7 @@
       100% {opacity:1;}
    }
    .__right-sub-section{
-      margin:5rem -3.5rem;
+      margin:0rem -3.5rem;
       .__img{
          img{
                   width:25rem;
@@ -17,9 +17,16 @@
       
    .__left-sub-section{
       flex: 27.5rem 0;
-      margin: 10rem 0rem;
+      margin: 7.5rem 0rem;
       position: relative;
       z-index: 9;
+      h1{
+         span{
+            color:$blue;
+            font-size:4.75rem;
+            font-family: bold;
+         }
+      }
       .button{
          margin-top:2rem;
          display:flex;
@@ -108,7 +115,6 @@
 }
 
 .second-careers-bubble{
-margin:0rem 0 10rem 0;
 display: flex;
 justify-content: center;
 .background-layer{
