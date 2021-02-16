@@ -35,10 +35,11 @@
                   width:55rem;
               } 
             img:nth-child(2){
-               margin-left: 13rem;
+               margin-left: 14rem;
                position: absolute;
-               top:-1.5rem;
-               width:17.5rem;border-radius: 1rem;
+               top:2rem;
+               width:18rem;
+               border-radius: 1rem;
                animation-name: stretch; 
                animation-duration: 2.5s; 
                animation-timing-function: ease-in-out; 
@@ -95,8 +96,7 @@
                            width: 47.5rem;
                         }
                            img:nth-child(2){
-                              margin-left:11rem;
-                              top:-2rem;
+                              margin-left:12rem;
                               width:15rem;
                            }
                            }

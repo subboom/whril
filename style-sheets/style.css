@@ -1669,10 +1669,10 @@ span {
 }
 
 .__first-index-section .__left-sub-section .__img img:nth-child(2) {
-  margin-left: 13rem;
+  margin-left: 14rem;
   position: absolute;
-  top: -1.5rem;
-  width: 17.5rem;
+  top: 2rem;
+  width: 18rem;
   border-radius: 1rem;
   -webkit-animation-name: stretch;
           animation-name: stretch;
@@ -1754,8 +1754,7 @@ span {
     width: 47.5rem;
   }
   .__first-index-section .__left-sub-section .__img img:nth-child(2) {
-    margin-left: 11rem;
-    top: -2rem;
+    margin-left: 12rem;
     width: 15rem;
   }
   .__first-index-section .__right-sub-section {
