@@ -524,7 +524,7 @@ span {
 }
 
 .__first-careers-section .__left-sub-section .button {
-  margin-top: 2rem;
+  margin-top: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -583,7 +583,10 @@ span {
         -ms-flex: 22.5rem 0;
             flex: 22.5rem 0;
   }
-  .__first-careers-section .__left-sub-section h1, .__first-careers-section .__left-sub-section span {
+  .__first-careers-section .__left-sub-section h1 {
+    font-size: 4rem;
+  }
+  .__first-careers-section .__left-sub-section h1 span {
     font-size: 4rem;
   }
 }
@@ -602,7 +605,10 @@ span {
             flex: 15rem 0;
     margin-left: 2rem;
   }
-  .__first-careers-section .__left-sub-section h1, .__first-careers-section .__left-sub-section span {
+  .__first-careers-section .__left-sub-section h1 {
+    font-size: 3rem;
+  }
+  .__first-careers-section .__left-sub-section h1 span {
     font-size: 3rem;
   }
 }
@@ -641,9 +647,12 @@ span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: -1rem 0rem;
+    margin: 3rem 0 0 0;
   }
-  .__first-careers-section .__left-sub-section h1, .__first-careers-section .__left-sub-section span {
+  .__first-careers-section .__left-sub-section h1 {
+    font-size: 2.25rem;
+  }
+  .__first-careers-section .__left-sub-section h1 span {
     font-size: 2.25rem;
   }
 }
@@ -863,7 +872,7 @@ span {
 
 @media screen and (max-width: 60.9375rem) {
   .third-careers-bubble {
-    margin: 5rem 0 5rem 0rem;
+    margin: 10.5rem 0 5rem 0rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
