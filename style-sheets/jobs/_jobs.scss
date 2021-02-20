@@ -60,7 +60,7 @@
          }
       .__left-sub-section{
          flex:22.5rem 0;
-         h1{
+         h1, span{
             font-size:4rem;
          }
       }
@@ -81,7 +81,7 @@
       .__left-sub-section{
          flex:15rem 0;
          margin-left:2rem;
-         h1{
+         h1, span{
             font-size:3rem;
          }
       }
@@ -107,7 +107,7 @@
       align-items: center;
       flex-direction: column;
       margin: -1rem 0rem;
-      h1{
+      h1, span{
          font-size:2.25rem;
       }
    }
