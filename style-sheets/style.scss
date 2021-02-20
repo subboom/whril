@@ -32,10 +32,11 @@
          img{  
                   position: relative;
                   top:-3rem;
+                  left:3.5rem;;
                   width:55rem;
               } 
             img:nth-child(2){
-               margin-left: 14rem;
+               margin-left: 13.5rem;
                position: absolute;
                top:2rem;
                width:18rem;
@@ -68,10 +69,11 @@
       align-self: center;
       h2{
          text-align: center;
+         width:20rem;
       }
       a{
-         img{
-            margin:1.5rem 3.25rem;
+         img{        
+            margin: 1.75rem 0 0 3.75rem;
             width:12.5rem;
             &:hover{
                transition: ease-in-out .35s;
@@ -108,7 +110,8 @@
                      }
                      a{
                         img{
-                           margin:1.5rem 1.2rem;
+                           margin-top:1.5rem;
+                           margin-left: 5.25rem;
                            width:10rem;
                           }
                      }
@@ -118,14 +121,14 @@
 
 @media screen and (max-width: 45rem){
    .__first-index-section{
-      margin-bottom: 8rem;
+      margin-bottom: 0rem;
       display: flex;
    .__left-sub-section{
       align-self: center;
       .__img{
-         left:8rem;
          img{
-                  width:33rem;
+         left:2.5rem;
+                  width:30rem;
               } 
               img:nth-child(2){
                  display: none;
@@ -134,13 +137,15 @@
       }
       
    .__right-sub-section{
-      top:-5rem;
-      left: -16.25rem;
+      top:-8rem;
+      left: -15rem;
       h2,span{
+         width:20rem;
          font-size:2rem
       }
       a{
          img{
+            margin-left:5.25rem;
             width:10rem;
          }
       }
