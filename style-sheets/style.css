@@ -1217,6 +1217,9 @@ span {
   .sixth-career-bubble .inner-box {
     padding: 2.5rem 0;
   }
+  .sixth-career-bubble .inner-box .jobs-table .header-text h2 {
+    font-size: 2.25rem;
+  }
   .sixth-career-bubble .inner-box .jobs-table table {
     width: 40rem;
   }
@@ -1248,6 +1251,9 @@ span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .sixth-career-bubble .inner-box .jobs-table .header-text h2 {
+    font-size: 2.25rem;
   }
   .sixth-career-bubble .inner-box .jobs-table table {
     width: 22.5rem;
@@ -1281,8 +1287,8 @@ span {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .sixth-career-bubble .inner-box .jobs-table .header-text h1 {
-    font-size: 2rem;
+  .sixth-career-bubble .inner-box .jobs-table .header-text h2 {
+    font-size: 2.25rem;
   }
   .sixth-career-bubble .inner-box .jobs-table table {
     width: 15rem;

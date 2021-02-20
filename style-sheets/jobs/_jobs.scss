@@ -540,6 +540,7 @@ and (min-width:55rem){
       padding: 2.5rem 0 0rem 0;
    
       .jobs-table {
+
          table {
             width: 47.5rem;
             }
@@ -565,6 +566,11 @@ and (min-width:44.375rem){
       padding: 2.5rem 0;
    
       .jobs-table {
+         .header-text{
+            h2{
+               font-size:2.25rem;
+            }
+         }
          table {
             width: 40rem;
             }
@@ -596,6 +602,9 @@ and (min-width:30rem){
             .header-text{
                display:flex;
                justify-content: center;
+               h2{
+                  font-size:2.25rem;
+               }
             }
             table {
                width: 22.5rem;
@@ -628,8 +637,8 @@ and (max-width:30rem){
             .header-text{
                display:flex;
                justify-content: center;
-               h1{
-                  font-size:2rem;
+               h2{
+                  font-size:2.25rem;
                }
             }
             table {
