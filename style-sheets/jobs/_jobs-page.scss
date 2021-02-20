@@ -12,17 +12,17 @@
         }
         .upper{
             border-bottom: 1px solid #ccc;
-            margin-bottom:3rem;
-            padding-bottom:4.5rem;
+            margin-bottom:3rem; //under border line
+            padding-bottom:4.5rem; // above border line
             .back-btn{
-                display:flex;
-                flex-direction: row;
                 img{
                     width:.85rem;
                 }
                 a{
+                    position: relative;
+                    top:-1.15rem;
+                    left:1.25rem;
                     color:$grey;
-                    padding-left:.5rem;
                     font-size:.95rem;
                 }
                 &:hover a{
@@ -41,19 +41,17 @@
                 color:$dark-purple;
             }
             .location{
-                display:flex;
-                flex-direction: row;
-                padding-bottom: 1.5rem;
+                padding: .5rem 0 1.5rem 0;
                 img{
                     width:1.2rem;
-                    margin-right:.65rem;
                 }
                 h2{
-                    color:$dark-purple;
+                    position: relative;
+                    top:-1.25rem;
+                    left:1.75rem;
                     font-size:1.25rem;
                     font-family: book;
                     color:$dark-purple2;
-                   
                 }
             }
 

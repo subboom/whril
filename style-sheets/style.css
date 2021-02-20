@@ -1340,23 +1340,15 @@ span {
   padding-bottom: 4.5rem;
 }
 
-.first-busdev-bubble .left .upper .back-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .first-busdev-bubble .left .upper .back-btn img {
   width: .85rem;
 }
 
 .first-busdev-bubble .left .upper .back-btn a {
+  position: relative;
+  top: -1.15rem;
+  left: 1.25rem;
   color: #585858;
-  padding-left: .5rem;
   font-size: .95rem;
 }
 
@@ -1379,23 +1371,17 @@ span {
 }
 
 .first-busdev-bubble .left .upper .location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-bottom: 1.5rem;
+  padding: .5rem 0 1.5rem 0;
 }
 
 .first-busdev-bubble .left .upper .location img {
   width: 1.2rem;
-  margin-right: .65rem;
 }
 
 .first-busdev-bubble .left .upper .location h2 {
-  color: #2B1951;
+  position: relative;
+  top: -1.25rem;
+  left: 1.75rem;
   font-size: 1.25rem;
   font-family: book;
   color: #514D69;
