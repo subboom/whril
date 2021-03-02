@@ -47,9 +47,8 @@
     }
     
     button{
-        @include darkpurple-square-btn();
+        @include glow-effect-btn();
         width:8rem;
-        background:linear-gradient(to left, $blue, $purple);
       }
    }
   

@@ -56,7 +56,7 @@
             }
 
             button{
-                @include darkpurple-square-btn();
+                @include glow-effect-btn();
                 outline:none;
             }
         }
@@ -88,7 +88,7 @@
                 }
                 button{
                     margin-top:1rem;
-                    @include darkpurple-square-btn();
+                    @include glow-effect-btn();
                     outline:none;
                 }
         }
