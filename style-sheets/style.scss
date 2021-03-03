@@ -39,7 +39,6 @@
 }
 
 .__second-index-section{
-   margin-bottom:10rem;
    display: flex;
    justify-content: center;
    animation: fadeIn ease 1.5s;
@@ -48,7 +47,7 @@
       100% {opacity:1;}
    }
    .form{
-      width:24.5rem;
+      width:25rem;
       @media screen 
          and (max-width: 57.5rem) {
             width:13rem;
@@ -107,3 +106,9 @@
    }
 }
 
+.home-footer{
+   position: absolute;
+   bottom:0;
+   height:5rem;
+   width:100%;
+}

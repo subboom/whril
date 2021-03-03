@@ -528,7 +528,7 @@ span {
   background: transparent;
   outline: none;
   border: none;
-  padding: 1.2rem 1.55rem;
+  padding: .95rem 1.1rem;
   color: #292929;
   cursor: pointer;
   position: relative;
@@ -1429,7 +1429,7 @@ span {
   background: transparent;
   outline: none;
   border: none;
-  padding: 1.2rem 1.55rem;
+  padding: .95rem 1.1rem;
   color: #292929;
   cursor: pointer;
   position: relative;
@@ -1528,11 +1528,11 @@ span {
 }
 
 .first-busdev-bubble .left .lower button {
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
   background: transparent;
   outline: none;
   border: none;
-  padding: 1.2rem 1.55rem;
+  padding: .95rem 1.1rem;
   color: #292929;
   cursor: pointer;
   position: relative;
@@ -1717,7 +1717,6 @@ span {
 }
 
 .__second-index-section {
-  margin-bottom: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1738,7 +1737,7 @@ span {
 }
 
 .__second-index-section .form {
-  width: 24.5rem;
+  width: 25rem;
 }
 
 @media screen and (max-width: 57.5rem) {
@@ -1804,7 +1803,7 @@ span {
   background: transparent;
   outline: none;
   border: none;
-  padding: 1.2rem 1.55rem;
+  padding: .95rem 1.1rem;
   color: #292929;
   cursor: pointer;
   position: relative;
@@ -1871,5 +1870,12 @@ span {
   transition: ease-in-out .35s;
   -webkit-transform: rotate(1.5deg) scale(1.125);
           transform: rotate(1.5deg) scale(1.125);
+}
+
+.home-footer {
+  position: absolute;
+  bottom: 0;
+  height: 5rem;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
