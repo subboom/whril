@@ -693,6 +693,9 @@ span {
   .__first-careers-section .__left-sub-section h1 span {
     font-size: 2.25rem;
   }
+  .__first-careers-section .__left-sub-section button {
+    margin-top: 1.75rem;
+  }
 }
 
 .second-careers-bubble {
@@ -732,7 +735,7 @@ span {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 12.50rem 3.5rem 1rem 3.5rem;
+  margin: 5rem 3.5rem 1rem 3.5rem;
 }
 
 .second-careers-bubble .background-layer .text .inner-text {
@@ -749,17 +752,21 @@ span {
   }
 }
 
-.second-careers-bubble .background-layer .text .inner-text h1 {
+.second-careers-bubble .background-layer .text .inner-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.second-careers-bubble .background-layer .text .inner-text p {
   font-family: book;
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-  font-weight: 100;
+  font-size: 1rem;
   padding-bottom: 1.25rem;
   color: #2B1951;
 }
 
 @media screen and (max-width: 90.625rem) and (min-width: 62.5rem) {
-  .second-careers-bubble .background-layer .text .inner-text h1 {
+  .second-careers-bubble .background-layer .text .inner-text p {
     min-width: 15rem;
   }
 }
@@ -804,10 +811,10 @@ span {
 
 @media screen and (max-width: 40rem) {
   .second-careers-bubble {
-    margin-top: -11rem;
+    margin-top: -15rem;
   }
   .second-careers-bubble .background-layer {
-    margin-bottom: -7.5rem;
+    margin-bottom: -10rem;
   }
   .second-careers-bubble .background-layer .background-img img {
     width: 15rem;
@@ -816,7 +823,7 @@ span {
   }
   .second-careers-bubble .background-layer .text {
     min-width: 10rem;
-    margin: 1rem 5rem 1rem 3.5rem;
+    margin: 0rem 5rem 1rem 3.5rem;
   }
   .second-careers-bubble .background-layer .text .inner-text h1 {
     font-size: 1rem;
@@ -936,85 +943,6 @@ span {
   }
   .third-careers-bubble .values-card .card {
     margin: 1.75rem 0 2.25rem 0rem;
-  }
-}
-
-.fourth-careers-bubble {
-  margin: 7.5rem 2.5rem 10rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.fourth-careers-bubble .team-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.fourth-careers-bubble .team-cards .teammate-card {
-  margin: 1.75rem 2.5rem 0 2.5rem;
-  width: 13.5rem;
-}
-
-.fourth-careers-bubble .team-cards .teammate-card img {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 1rem;
-}
-
-.fourth-careers-bubble .team-cards .teammate-card h1 {
-  padding: 1.25rem 0 .5rem 0;
-  font-size: 1.25rem;
-  color: #2B1951;
-}
-
-.fourth-careers-bubble .team-cards .teammate-card h2 {
-  font-size: .925rem;
-  font-family: 'book';
-  font-weight: 100;
-  padding-bottom: 1rem;
-  color: #2B1951;
-}
-
-.fourth-careers-bubble .team-cards .teammate-card p {
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-  color: #2B1951;
-}
-
-@media screen and (max-width: 60.9375rem) {
-  .fourth-careers-bubble {
-    margin: -5rem 0 7.5rem 0rem;
-  }
-  .fourth-careers-bubble .team-cards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  .fourth-careers-bubble .team-cards .teammate-card {
-    margin: 7.5rem 0rem 0rem 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -1605,7 +1533,7 @@ span {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 1rem;
   max-width: 22.5rem;
-  max-height: 55.25rem;
+  max-height: 51rem;
   -webkit-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
 }
