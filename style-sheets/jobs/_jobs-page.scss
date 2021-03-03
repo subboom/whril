@@ -1,5 +1,5 @@
 .first-busdev-bubble{
-    padding: 1.5rem 0 6rem 0;
+    padding: 1.5rem 0 5rem 0;
     display:flex;
     justify-content: center;
     .left{
@@ -13,7 +13,7 @@
         .upper{
             border-bottom: 1px solid #ccc;
             margin-bottom:3rem; //under border line
-            padding-bottom:4.5rem; // above border line
+            padding-bottom:4.25rem; // above border line
             .back-btn{
                 img{
                     width:.85rem;
@@ -56,8 +56,13 @@
             }
 
             button{
-                @include glow-effect-btn();
-                outline:none;
+               @include glow-effect-btn-sq();
+               border:3px solid $black;
+               border-radius: 1rem;
+               &:hover{
+                  transition: ease-in-out .35s;
+                  transform: rotate(1.5deg) scale(1.125);
+               }
             }
         }
 
@@ -87,10 +92,15 @@
                     }
                 }
                 button{
-                    margin-top:1rem;
-                    @include glow-effect-btn();
-                    outline:none;
-                }
+                    margin-top:1.5rem;
+                    @include glow-effect-btn-sq();
+                    border:3px solid $black;
+                    border-radius: 1rem;
+                    &:hover{
+                       transition: ease-in-out .35s;
+                       transform: rotate(1.5deg) scale(1.125);
+                    }
+                 }
         }
     }
     .right{

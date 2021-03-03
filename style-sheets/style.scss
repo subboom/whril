@@ -13,11 +13,10 @@
 'legal/privacy',
 
 'jobs/jobs',
-'jobs/jobs-page', 
-
-'other-pages/signup';
+'jobs/jobs-page';
 
 .__first-index-section{
+   margin:3rem 0 1rem 0;
    display: flex;
    justify-content: center;
    animation: fadeIn ease 1.5s;
@@ -26,30 +25,21 @@
       100% {opacity:1;}
    }
    .__left-sub-section{
-      margin:3rem 0 1.5rem 0;
       align-self: center;
-      h2{
+      h1,h2{
          text-align: center;
          width:27.5rem;
          font-size:1.25rem;
-            span{
-               font-size:2.25rem;
-            }
       }
-      button{
-         @include glow-effect-btn();
-         border:3px solid $black;
-         border-radius: 10rem;
-         &:hover{
-            transition: ease-in-out .35s;
-            transform: rotate(-1.5deg) scale(1.125);
-         }
-       }       
+      h2{
+         margin-top: .25rem;
+         font-size: 3.5rem;
+      }
    }
 }
 
 .__second-index-section{
-   margin-bottom:20rem;
+   margin-bottom:10rem;
    display: flex;
    justify-content: center;
    animation: fadeIn ease 1.5s;
@@ -105,9 +95,9 @@
 
        button{
           margin:1rem 0;
-         @include glow-effect-btn();
+         @include glow-effect-btn-sq();
          border:3px solid $black;
-         border-radius: 10rem;
+         border-radius: 1rem;
          &:hover{
             transition: ease-in-out .35s;
             transform: rotate(1.5deg) scale(1.125);
