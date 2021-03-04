@@ -126,17 +126,17 @@
 header {
   position: relative;
   z-index: 99999;
-  margin: 2rem 0;
+  margin: 1.25rem 0 0 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 header .main-logo a img {
-  width: 6rem;
+  width: 3rem;
 }
 
 header .main-logo a img:hover {
@@ -1607,7 +1607,7 @@ span {
 }
 
 .__first-index-section {
-  margin: 3rem 0 1rem 0;
+  margin: 3rem 0 2.5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1640,8 +1640,8 @@ span {
 }
 
 .__first-index-section .__left-sub-section h2 {
-  margin-top: .25rem;
-  font-size: 3.5rem;
+  margin-top: .5rem;
+  font-size: 2.5rem;
 }
 
 .__second-index-section {

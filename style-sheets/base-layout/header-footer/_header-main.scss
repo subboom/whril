@@ -2,13 +2,13 @@
 header {
   position: relative;
   z-index: 99999;
-  margin:2rem 0;
+  margin:1.25rem 0 0 1.25rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
       .main-logo {
          a {
             img{
-               width:6rem;
+               width:3rem;
                &:hover {
                   animation: shake 1.25s cubic-bezier(.36,.07,.19,.97) both infinite;
                   transform: translate3d(0, 0, 0);
