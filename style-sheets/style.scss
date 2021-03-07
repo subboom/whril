@@ -16,7 +16,7 @@
 'jobs/jobs-page';
 
 .__first-index-section{
-   margin:3rem 0 2.5rem 0;
+   margin:1rem 0 2.5rem 0;
    display: flex;
    justify-content: center;
    animation: fadeIn ease 1.5s;
@@ -106,9 +106,28 @@
    }
 }
 
-.home-footer{
-   position: absolute;
-   bottom:0;
-   height:5rem;
-   width:100%;
+.__third-index-section{
+   margin:3rem 0 5.5rem 0;
+   display: flex;
+   justify-content: center;
+   animation: fadeIn ease 1.5s;
+   @keyframes fadeIn {
+      0% {opacity:.25;}
+      100% {opacity:1;}
+   }
+   .__center-section{
+      display: flex;
+      flex-direction: column;
+         h1{
+            align-self: center;
+            font-family: bold;
+            font-size:1.25rem;
+         }
+         video{
+            margin-top: 1rem;
+            border-radius: .25rem;
+            width:27.5rem;
+            outline:none;
+         }
+   }
 }
