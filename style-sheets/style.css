@@ -1679,9 +1679,9 @@ span {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 1.5rem;
   padding-bottom: 1rem;
-  border-top: 1.25px solid rgba(223, 223, 223, 0.5);
+  width: 1.75rem;
+  border-top: 1.5px solid rgba(223, 223, 223, 0.5);
 }
 
 @media screen and (max-width: 57.5rem) {
@@ -1716,7 +1716,7 @@ span {
   outline: none;
   font-family: book;
   cursor: pointer;
-  border: solid 1px #ccc;
+  border: 1.5px solid rgba(223, 223, 223, 0.75);
   border-radius: .5rem;
   background: transparent;
   font-size: .875rem;
@@ -1817,7 +1817,7 @@ span {
 }
 
 .__third-index-section {
-  margin: 1rem 0 5.5rem 0;
+  margin: 1.25rem 0 5.5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1851,12 +1851,12 @@ span {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 1.5rem;
-  padding-bottom: 2.5rem;
-  border-top: 1.25px solid rgba(223, 223, 223, 0.4);
+  width: 1.75rem;
+  border-top: 1.5px solid rgba(223, 223, 223, 0.5);
 }
 
 .__third-index-section .__center-section h1 {
+  margin-top: 2.5rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
