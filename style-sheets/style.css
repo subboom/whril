@@ -738,7 +738,7 @@ span {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 5rem 3.5rem 1rem 3.5rem;
+  margin: 3rem 3.5rem 1rem 3.5rem;
 }
 
 .second-careers-bubble .background-layer .text .inner-text {
@@ -758,7 +758,7 @@ span {
 .second-careers-bubble .background-layer .text .inner-text h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .second-careers-bubble .background-layer .text .inner-text p {
@@ -1639,12 +1639,13 @@ span {
 .__first-index-section .__left-sub-section h1, .__first-index-section .__left-sub-section h2 {
   text-align: center;
   width: 27.5rem;
-  font-size: 1.25rem;
+  font-size: .9rem;
+  font-family: book;
 }
 
 .__first-index-section .__left-sub-section h2 {
   margin-top: .5rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .__second-index-section {
@@ -1705,8 +1706,8 @@ span {
 }
 
 .__second-index-section .form form label {
-  font-size: .825rem;
-  font-family: bold;
+  font-size: .9rem;
+  font-family: book;
   color: #2B1951;
   padding: 1.5rem 0 .5rem 0;
 }
@@ -1722,7 +1723,6 @@ span {
   border: 1.5px solid rgba(223, 223, 223, 0.75);
   border-radius: .5rem;
   background: transparent;
-  font-size: .875rem;
   width: 18rem;
 }
 
@@ -1863,8 +1863,8 @@ span {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-family: bold;
-  font-size: 1.25rem;
+  font-family: book;
+  font-size: .9rem;
 }
 
 .__third-index-section .__center-section video {
