@@ -39,15 +39,15 @@
 and (max-width: 57.5rem) {
    .universal-footer {
       display: grid;
-      justify-items: flex-start;
-      margin-left:.75rem;
+      justify-items: center;
   .bottom-footer-section{
-     margin-left:1.65rem;
      .inner-footer-section{
       display: flex;
       flex-direction: column;  
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap:0rem;
+      padding-bottom: 1rem;
+      text-align: center;
          p{
             padding:0;
             margin-bottom: 1.5rem;
