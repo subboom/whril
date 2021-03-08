@@ -520,12 +520,6 @@ span {
   z-index: 9;
 }
 
-.__first-careers-section .__left-sub-section h1 span {
-  color: #4BA9FF;
-  font-size: 4.75rem;
-  font-family: bold;
-}
-
 .__first-careers-section .__left-sub-section button {
   margin-top: 1.25rem;
   background: transparent;
@@ -871,12 +865,12 @@ span {
   width: 22.5rem;
 }
 
-.third-careers-bubble .values-card .card img {
-  width: 2rem;
+.third-careers-bubble .values-card .card h2 {
+  font-size: 1.5rem;
 }
 
 .third-careers-bubble .values-card .card h1 {
-  padding: 1.25rem 0 .5rem 0;
+  padding: 0rem 0 .5rem 0;
   font-size: 1.25rem;
   color: #2B1951;
 }
