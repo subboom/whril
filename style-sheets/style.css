@@ -1630,7 +1630,7 @@ span {
       align-self: center;
 }
 
-.__first-index-section .__left-sub-section h1, .__first-index-section .__left-sub-section h2 {
+.__first-index-section .__left-sub-section p, .__first-index-section .__left-sub-section h2 {
   text-align: center;
   width: 27.5rem;
   font-size: .9rem;
