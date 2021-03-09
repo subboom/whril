@@ -1,6 +1,6 @@
 .jobs-header{
-   margin-right:46rem;
-   margin-left: 1.75rem;;
+   margin-right: 18.5rem;
+
 }
 .__first-careers-section{
    display: flex;
@@ -25,9 +25,7 @@
       position: relative;
       z-index: 9;
       button{
-         margin-top:1.25rem;
          @include glow-effect-btn-sq();
-         border:3px solid $black;
          border-radius: 1rem;
          &:hover{
             transition: ease-in-out .35s;

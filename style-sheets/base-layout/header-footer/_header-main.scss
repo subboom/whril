@@ -2,10 +2,11 @@
 header {
   position: relative;
   z-index: 99999;
-  margin:1rem 26.5rem 0 0;
+  margin:1rem 0 0 0;
   display: flex;
   justify-content: center;
       .main-logo {
+        margin:0 26.5rem 0 0rem;
          a {
             img{
                width:1.75rem;
@@ -35,3 +36,12 @@ header {
          }
       }
    }
+
+   @media screen and (max-width: 30rem) {
+header {
+  justify-content: flex-start;
+      .main-logo {
+        margin:0 0 0 .5rem;
+   }
+}
+              }
