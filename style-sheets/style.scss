@@ -28,11 +28,10 @@
    }
    .__left-sub-section{
       align-self: center;
-      p,h2{
+      h1,h2{
          text-align: center;
-         width:27.5rem;
+         width:25rem;
          font-size:.8rem;
-         font-family: bold;
       }
       h2{
          margin-top: .5rem;
@@ -51,7 +50,7 @@
    }
 
    .form{
-      width:24.5rem;
+      width:25rem;
       display: flex;
       flex-direction: column;
          .border-top{
@@ -69,12 +68,13 @@
        flex-direction: column;
        text-align: center;
         label{
-         font-size:.725rem;
-         font-family: book;
+           h1{
+            font-size:.8rem;
+            font-family: medium;
            color: $dark-purple;
            padding:1.5rem 0 .75rem 0;
+           }
         }
-   
         input{
            align-self: center;
            padding:.65rem 1rem .65rem 1rem;
@@ -97,6 +97,7 @@
          border-radius: 1rem;
          font-size:.8rem;
          color: $dark-purple;
+         font-family: medium;
          &:hover{
             transition: ease-in-out .35s;
             transform: rotate(1.5deg) scale(1.125);
@@ -129,9 +130,9 @@
             font-size:.8rem;
          }
          video{
-            margin-top: 1rem;
+            margin-top: .75rem;
             border-radius: .25rem;
-            width:27.5rem;
+            width:25rem;
             outline:none;
          }
    }

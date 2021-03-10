@@ -242,8 +242,10 @@ a {
 
 h1 {
   font-size: 4rem;
-  font-family: bold;
+  font-family: medium;
   color: #2B1951;
+  text-decoration: none;
+  text-shadow: none;
 }
 
 h2 {
@@ -2989,11 +2991,10 @@ span {
       align-self: center;
 }
 
-.__first-index-section .__left-sub-section p, .__first-index-section .__left-sub-section h2 {
+.__first-index-section .__left-sub-section h1, .__first-index-section .__left-sub-section h2 {
   text-align: center;
-  width: 27.5rem;
+  width: 25rem;
   font-size: .8rem;
-  font-family: bold;
 }
 
 .__first-index-section .__left-sub-section h2 {
@@ -3022,7 +3023,7 @@ span {
 }
 
 .__second-index-section .form {
-  width: 24.5rem;
+  width: 25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3058,9 +3059,9 @@ span {
   text-align: center;
 }
 
-.__second-index-section .form form label {
-  font-size: .725rem;
-  font-family: book;
+.__second-index-section .form form label h1 {
+  font-size: .8rem;
+  font-family: medium;
   color: #2B1951;
   padding: 1.5rem 0 .75rem 0;
 }
@@ -3099,6 +3100,7 @@ span {
   border-radius: 1rem;
   font-size: .8rem;
   color: #2B1951;
+  font-family: medium;
 }
 
 .__second-index-section .form .terms button .glow-on-hover:before {
@@ -3207,9 +3209,9 @@ span {
 }
 
 .__third-index-section .__center-section video {
-  margin-top: 1rem;
+  margin-top: .75rem;
   border-radius: .25rem;
-  width: 27.5rem;
+  width: 25rem;
   outline: none;
 }
 
