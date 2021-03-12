@@ -18,7 +18,7 @@
 'sub-layouts/jobs/jobs-page';
 
 .__first-index-section{
-   margin:1rem 0 2rem 0;
+   margin:5rem 0 2.5rem 0;
    display: flex;
    justify-content: center;
    animation: fadeIn ease 1.5s;
@@ -28,15 +28,9 @@
    }
    .__left-sub-section{
       align-self: center;
-      h1,h2{
+      p{
          text-align: center;
-         width:25rem;
-         font-size:.8rem;
-         font-weight: 100;
-      }
-      h2{
-         margin-top: .5rem;
-         font-size:1.5rem;
+         width:20rem;
       }
    }
 }
@@ -69,15 +63,14 @@
        flex-direction: column;
        text-align: center;
         label{
-           h1{
-            font-size:.8rem;
-            font-family: medium;
+           p{
            color: $dark-purple;
            padding:1.5rem 0 .75rem 0;
-    font-weight: 100;
+           font-size:.8rem;
            }
         }
-        input{
+        input,
+        select{
            align-self: center;
            padding:.65rem 1rem .65rem 1rem;
            outline:none;
@@ -86,15 +79,16 @@
            border:1px solid rgb(219, 219, 219);
            border-radius: .5rem;
            background:transparent;
-           width:15rem;
+           width:17.5rem;
+           color: $dark-purple; 
         }
          
    }
    .terms{
-       margin: .5rem 0 .75rem 0;
+       margin: .5rem 0 1rem 0;
        text-align: center;
        button{
-          margin-top: .25rem;
+          margin-top: .5rem;
          @include glow-effect-btn-sq();
          border-radius: 1rem;
          font-size:.8rem;
@@ -126,11 +120,9 @@
             width:1.75rem;
             border-top: 1px solid rgb(236, 236, 236);
          }
-         h1{
+         p{
             margin-top:2.5rem;
             align-self: center;
-            font-size:.8rem;
-            font-weight: 100;
          }
          video{
             margin-top: .75rem;
