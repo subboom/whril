@@ -15,6 +15,7 @@
    }
    body{
       overflow-y: scroll;
+      user-select: none;
    }
    main{
       background:$superwhite;

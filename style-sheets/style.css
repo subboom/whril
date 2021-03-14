@@ -40,7 +40,7 @@
 }
 
 .universal-footer .bottom-footer-section .inner-footer-section {
-  padding: 2rem 0rem;
+  padding: 1.5rem 0 1rem 0;
   border-top: 1px solid #ececec;
   display: -ms-grid;
   display: grid;
@@ -217,6 +217,10 @@ html, body {
 
 body {
   overflow-y: scroll;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 main {
@@ -1885,7 +1889,7 @@ span {
 }
 
 .__first-marketplace-section {
-  margin: 1rem 0 .75rem 0;
+  margin: 0 0 .85rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1932,12 +1936,6 @@ span {
 
 .__first-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel {
   margin: 0 .35rem;
-  width: 10.25rem;
-  height: auto;
-  padding: 2.5rem .75rem;
-  border-radius: 1rem;
-  -webkit-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
@@ -1952,17 +1950,32 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .__first-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel img {
-  margin-bottom: 1rem;
-  width: 5rem;
-  height: auto;
+  z-index: 0;
+  width: 10.25rem;
+  height: 14rem;
+  background: url("../multimedia/img/active/maketplace/heineken.webp");
+  -webkit-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  background-position: center;
+  background-size: 18.5rem;
+  background-repeat: no-repeat;
 }
 
 .__first-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel p {
+  position: absolute;
+  top: 11.75rem;
+  left: -3.25rem;
+  z-index: 9999;
   text-align: center;
   width: 20rem;
+  font-family: bold;
+  font-weight: 900;
+  color: #F2F6F9;
 }
 
 .__first-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel:hover {
@@ -2033,9 +2046,15 @@ span {
 }
 
 .__second-marketplace-section .__outer-sub-section .__center-sub-section .category__options .category img {
-  margin-bottom: .25rem;
-  width: 2.25rem;
+  margin-bottom: .35rem;
+  width: 3rem;
   height: auto;
+}
+
+.__second-marketplace-section .__outer-sub-section .__center-sub-section .category__options .category img:hover {
+  border-radius: 100rem;
+  -webkit-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
 }
 
 .__second-marketplace-section .__outer-sub-section .__center-sub-section .category__options .category h1 {
@@ -2046,7 +2065,7 @@ span {
 .__fourth-marketplace-section,
 .__fifth-marketplace-section,
 .__sixth-marketplace-section {
-  margin-bottom: .75rem;
+  margin-bottom: 1.1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2087,6 +2106,7 @@ span {
 .__fourth-marketplace-section .__outer-sub-section .__center-title button,
 .__fifth-marketplace-section .__outer-sub-section .__center-title button,
 .__sixth-marketplace-section .__outer-sub-section .__center-title button {
+  position: relative;
   padding-top: .125rem;
   background: transparent;
   outline: none;
@@ -2131,12 +2151,6 @@ span {
 .__fifth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel,
 .__sixth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel {
   margin: 0 .35rem;
-  width: 10.25rem;
-  height: auto;
-  padding: 2.5rem .75rem;
-  border-radius: 1rem;
-  -webkit-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
@@ -2154,23 +2168,38 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .__third-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel img,
 .__fourth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel img,
 .__fifth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel img,
 .__sixth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel img {
-  margin-bottom: 1rem;
-  width: 5rem;
-  height: auto;
+  z-index: 0;
+  width: 10.25rem;
+  height: 14rem;
+  background: url("../multimedia/img/active/maketplace/heineken.webp");
+  -webkit-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  background-position: center;
+  background-size: 18.5rem;
+  background-repeat: no-repeat;
 }
 
 .__third-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel p,
 .__fourth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel p,
 .__fifth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel p,
 .__sixth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel p {
+  position: absolute;
+  top: 11.75rem;
+  left: -3.25rem;
+  z-index: 9999;
   text-align: center;
   width: 20rem;
+  font-family: bold;
+  font-weight: 900;
+  color: #F2F6F9;
 }
 
 .__third-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel:hover,
@@ -2184,149 +2213,19 @@ span {
 }
 
 .__third-marketplace-section button {
-  padding-left: 22rem;
+  left: 22rem;
 }
 
 .__fourth-marketplace-section button {
-  padding-left: 19.75rem;
+  left: 19.75rem;
 }
 
 .__fifth-marketplace-section button {
-  padding-left: 18rem;
+  left: 18.25rem;
 }
 
 .__sixth-marketplace-section button {
-  padding-left: 18.5rem;
-}
-
-.__seventh-marketplace-section {
-  margin-bottom: .75rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-  -webkit-animation: fadeIn ease 1.5s;
-          animation: fadeIn ease 1.5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: .25;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.__seventh-marketplace-section .__outer-sub-section {
-  width: 32rem;
-}
-
-.__seventh-marketplace-section .__outer-sub-section .__center-title h2 {
-  font-size: 1.1rem;
-}
-
-.__seventh-marketplace-section .__outer-sub-section .__center-sub-section {
-  padding: 1rem 0rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
-.__seventh-marketplace-section .__outer-sub-section .__center-sub-section button {
-  -webkit-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
-  margin-top: .5rem;
-  background: transparent;
-  outline: none;
-  border: none;
-  padding: .9rem 1.1rem;
-  color: #292929;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  font-family: bold;
-  font-size: .925rem;
-  border-radius: 1rem;
-  font-size: 2rem;
-  color: #2B1951;
-  font-family: medium;
-  padding: 3rem 8rem;
-}
-
-.__seventh-marketplace-section .__outer-sub-section .__center-sub-section button .glow-on-hover:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  -webkit-filter: blur(0.5rem);
-          filter: blur(0.5rem);
-  width: calc(100% + .2rem);
-  height: calc(100% + .2rem);
-  -webkit-animation: glowing 20s linear infinite;
-          animation: glowing 20s linear infinite;
-  opacity: 0;
-  -webkit-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
-  border-radius: 1rem;
-  outline: none;
-}
-
-.__seventh-marketplace-section .__outer-sub-section .__center-sub-section button .glow-on-hover:hover:before {
-  opacity: 1;
-}
-
-.__seventh-marketplace-section .__outer-sub-section .__center-sub-section button .glow-on-hover:after {
-  z-index: -1;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #F2F6F9;
-  left: 0;
-  top: 0;
-  border-radius: 1rem;
-  border: none;
-  outline: none;
-}
-
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.__seventh-marketplace-section .__outer-sub-section .__center-sub-section button:hover {
-  -webkit-transition: ease-in-out .35s;
-  transition: ease-in-out .35s;
-  -webkit-transform: scale(1.125);
-          transform: scale(1.125);
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  left: 19rem;
 }
 
 .slider-container {
@@ -2409,7 +2308,7 @@ span {
 }
 
 .__first-jobs-section .__center-content {
-  margin: 1rem 0 16.5rem 0;
+  margin: 1rem 0 12rem 0;
 }
 
 .__first-jobs-section .__center-content .jobs-card {
@@ -2970,11 +2869,12 @@ span {
   border-radius: .5rem;
   background: transparent;
   width: 17.5rem;
+  height: 2.25rem;
   color: #2B1951;
 }
 
 .__second-index-section .form .terms {
-  margin: .5rem 0 1rem 0;
+  margin: .3rem 0 1rem 0;
   text-align: center;
 }
 
