@@ -1780,6 +1780,38 @@ span {
   }
 }
 
+.__first-marketplace-section {
+  margin: 5rem 0 2.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: fadeIn ease 1.5s;
+          animation: fadeIn ease 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: .25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.__first-marketplace-section .__left-sub-section {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.__first-marketplace-section .__left-sub-section p {
+  text-align: center;
+  width: 20rem;
+}
+
 .slider-container {
   height: 100vh;
   display: -webkit-inline-box;
@@ -1860,7 +1892,7 @@ span {
 }
 
 .__first-jobs-section .__center-content {
-  margin: 1rem 0 9.25rem 0;
+  margin: 1rem 0 16.5rem 0;
 }
 
 .__first-jobs-section .__center-content .jobs-card {
@@ -1879,8 +1911,6 @@ span {
   background: transparent;
   outline: none;
   cursor: pointer;
-  position: relative;
-  z-index: 0;
 }
 
 .__first-jobs-section .__center-content .jobs-card:hover {
@@ -1956,6 +1986,7 @@ span {
 .__first-jobs-section .__center-content .jobs-card .role img {
   margin-right: .5rem;
   width: 1.5rem;
+  height: 1.5rem;
 }
 
 .__first-jobs-section .__center-content .jobs-card .role h1 {
