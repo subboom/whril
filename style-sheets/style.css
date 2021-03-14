@@ -1914,7 +1914,7 @@ span {
 }
 
 .__first-marketplace-section .__outer-sub-section .__center-sub-section {
-  padding: 1rem 0rem;
+  padding: 1rem 0 .5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1922,7 +1922,7 @@ span {
       flex-wrap: no;
   -ms-flex-item-align: center;
       align-self: center;
-  max-width: 33rem;
+  max-width: 32.75rem;
   overflow-x: auto;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
@@ -1965,6 +1965,13 @@ span {
   width: 20rem;
 }
 
+.__first-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel:hover {
+  -webkit-transition: ease-out .25s;
+  transition: ease-out .25s;
+  -webkit-transform: translateY(-0.25rem);
+          transform: translateY(-0.25rem);
+}
+
 .__second-marketplace-section {
   margin: 0rem 0 .5rem 0;
   display: -webkit-box;
@@ -1993,12 +2000,12 @@ span {
   }
 }
 
-.__second-marketplace-section .__outer-sub-section {
-  width: 33rem;
-}
-
 .__second-marketplace-section .__outer-sub-section .__center-title {
   margin-bottom: .5rem;
+}
+
+.__second-marketplace-section .__outer-sub-section .__center-sub-section {
+  width: 32.75rem;
 }
 
 .__second-marketplace-section .__outer-sub-section .__center-sub-section .category__options {
@@ -2067,18 +2074,43 @@ span {
   }
 }
 
-.__third-marketplace-section .__center-title h2,
-.__fourth-marketplace-section .__center-title h2,
-.__fifth-marketplace-section .__center-title h2,
-.__sixth-marketplace-section .__center-title h2 {
-  font-size: 1.1rem;
+.__third-marketplace-section .__outer-sub-section .__center-title,
+.__fourth-marketplace-section .__outer-sub-section .__center-title,
+.__fifth-marketplace-section .__outer-sub-section .__center-title,
+.__sixth-marketplace-section .__outer-sub-section .__center-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.__third-marketplace-section .__center-sub-section,
-.__fourth-marketplace-section .__center-sub-section,
-.__fifth-marketplace-section .__center-sub-section,
-.__sixth-marketplace-section .__center-sub-section {
-  padding: 1rem 0rem;
+.__third-marketplace-section .__outer-sub-section .__center-title button,
+.__fourth-marketplace-section .__outer-sub-section .__center-title button,
+.__fifth-marketplace-section .__outer-sub-section .__center-title button,
+.__sixth-marketplace-section .__outer-sub-section .__center-title button {
+  padding-top: .125rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: .8rem;
+  color: #2B1951;
+  font-family: medium;
+}
+
+.__third-marketplace-section .__outer-sub-section .__center-title button:hover,
+.__fourth-marketplace-section .__outer-sub-section .__center-title button:hover,
+.__fifth-marketplace-section .__outer-sub-section .__center-title button:hover,
+.__sixth-marketplace-section .__outer-sub-section .__center-title button:hover {
+  -webkit-transition: ease-out .15s;
+  transition: ease-out .15s;
+  cursor: pointer;
+  color: #4BA9FF;
+}
+
+.__third-marketplace-section .__outer-sub-section .__center-sub-section,
+.__fourth-marketplace-section .__outer-sub-section .__center-sub-section,
+.__fifth-marketplace-section .__outer-sub-section .__center-sub-section,
+.__sixth-marketplace-section .__outer-sub-section .__center-sub-section {
+  padding: 1rem 0 .5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2086,7 +2118,7 @@ span {
       flex-wrap: no;
   -ms-flex-item-align: center;
       align-self: center;
-  max-width: 33rem;
+  max-width: 32.75rem;
   overflow-x: auto;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
@@ -2094,10 +2126,10 @@ span {
   -webkit-overflow-scrolling: touch;
 }
 
-.__third-marketplace-section .__center-sub-section .__advertisement-carousel,
-.__fourth-marketplace-section .__center-sub-section .__advertisement-carousel,
-.__fifth-marketplace-section .__center-sub-section .__advertisement-carousel,
-.__sixth-marketplace-section .__center-sub-section .__advertisement-carousel {
+.__third-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel,
+.__fourth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel,
+.__fifth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel,
+.__sixth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel {
   margin: 0 .35rem;
   width: 10.25rem;
   height: auto;
@@ -2108,10 +2140,10 @@ span {
   cursor: pointer;
 }
 
-.__third-marketplace-section .__center-sub-section .__advertisement-carousel .inner-carousel,
-.__fourth-marketplace-section .__center-sub-section .__advertisement-carousel .inner-carousel,
-.__fifth-marketplace-section .__center-sub-section .__advertisement-carousel .inner-carousel,
-.__sixth-marketplace-section .__center-sub-section .__advertisement-carousel .inner-carousel {
+.__third-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel,
+.__fourth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel,
+.__fifth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel,
+.__sixth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2124,21 +2156,47 @@ span {
           align-items: center;
 }
 
-.__third-marketplace-section .__center-sub-section .__advertisement-carousel .inner-carousel img,
-.__fourth-marketplace-section .__center-sub-section .__advertisement-carousel .inner-carousel img,
-.__fifth-marketplace-section .__center-sub-section .__advertisement-carousel .inner-carousel img,
-.__sixth-marketplace-section .__center-sub-section .__advertisement-carousel .inner-carousel img {
+.__third-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel img,
+.__fourth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel img,
+.__fifth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel img,
+.__sixth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel img {
   margin-bottom: 1rem;
   width: 5rem;
   height: auto;
 }
 
-.__third-marketplace-section .__center-sub-section .__advertisement-carousel .inner-carousel p,
-.__fourth-marketplace-section .__center-sub-section .__advertisement-carousel .inner-carousel p,
-.__fifth-marketplace-section .__center-sub-section .__advertisement-carousel .inner-carousel p,
-.__sixth-marketplace-section .__center-sub-section .__advertisement-carousel .inner-carousel p {
+.__third-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel p,
+.__fourth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel p,
+.__fifth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel p,
+.__sixth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel .inner-carousel p {
   text-align: center;
   width: 20rem;
+}
+
+.__third-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel:hover,
+.__fourth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel:hover,
+.__fifth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel:hover,
+.__sixth-marketplace-section .__outer-sub-section .__center-sub-section .__advertisement-carousel:hover {
+  -webkit-transition: ease-out .25s;
+  transition: ease-out .25s;
+  -webkit-transform: translateY(-0.25rem);
+          transform: translateY(-0.25rem);
+}
+
+.__third-marketplace-section button {
+  padding-left: 22rem;
+}
+
+.__fourth-marketplace-section button {
+  padding-left: 19.75rem;
+}
+
+.__fifth-marketplace-section button {
+  padding-left: 18rem;
+}
+
+.__sixth-marketplace-section button {
+  padding-left: 18.5rem;
 }
 
 .__seventh-marketplace-section {
