@@ -134,7 +134,7 @@ header {
 }
 
 header .main-logo a img {
-  width: 2.25rem;
+  width: 1.5rem;
 }
 
 header .main-logo a img:hover {
@@ -2226,31 +2226,6 @@ span {
 
 .__sixth-marketplace-section button {
   left: 19.60rem;
-}
-
-.__adpost-header {
-  -webkit-animation: fadeIn ease 1.5s;
-          animation: fadeIn ease 1.5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: .25;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.__adpost-header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.__adpost-header nav .main-logo a img {
-  width: 1.5rem;
-  height: auto;
 }
 
 .__first-adpost-section {
