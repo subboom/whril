@@ -1,39 +1,5 @@
-.marketplace-header{
-   animation: fadeIn ease 1.5s;
-   @keyframes fadeIn {
-      0% {opacity:.25;}
-      100% {opacity:1;}
-   }
-   nav{
-      display: flex;
-      .main-logo{
-         position: relative;
-         right:12rem;
-         a{
-            img{
-               width:2rem;
-               height:auto;
-            }
-         }
-      }
-         button{
-            position: relative;
-            left:12.5rem;
-           @include glow-effect-btn-sq();
-           border-radius: 1rem;
-           font-size:.8rem;
-           color: $dark-purple;
-           font-family: medium;
-         //   box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
-         //       &:hover{
-         //          box-shadow:none;
-         //       }
-        }
-   }
-}
-
 .__first-marketplace-section{
-    margin:0 0 .85rem 0;
+    margin:3rem 0 .85rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,83 +7,144 @@
     overflow: hidden;
     animation: fadeIn ease 1.5s;
     @keyframes fadeIn {
-       0% {opacity:.25;}
+      0% {opacity:0;}
        100% {opacity:1;}
     }
     .__outer-sub-section{
+       margin-bottom: .5rem;
+      .__center-title{
+         display: flex;
+         align-items: center;
+         h1{
+            margin-left: .35rem;
+            background: rgb(221, 226, 247);
+            padding:.65rem .85rem;
+            border-radius: .5rem;
+         }
+      }
        .__center-sub-section{
           padding:1rem 0 .5rem 0 ;
           display: flex;
           flex-wrap: no;
           align-self: center;
-          max-width: 32.75rem; // this changes the width of the Trending carousel. 
+          max-width: 27rem; // this changes the width of the Trending carousel. 
                               // please match this width with all carousels below it. 
           overflow-x: auto;
           scroll-snap-type: x mandatory;
           scroll-behavior: smooth;
           -webkit-overflow-scrolling: touch;
+          
           .__advertisement-carousel{
              margin:0 .35rem;
+             &:hover{
+                .inner-carousel{
+                   .__top{
+                     .hide-plus{
+                        transition: ease-in-out .35s;
+                       opacity: 1;
+                     }
+                   }
+                   .__bottom{
+                     p{
+                        transition: ease-in-out .35s;
+                        opacity: 1;
+                     }
+                   }
+                }
+             }
             cursor: pointer;
                .inner-carousel{
                   display: flex;
                   flex-direction: column;
                   align-items: center;
                   position: relative;
-                     img{
-                        z-index: 0;
-                        width:10.25rem;
-                        height: 14rem;
-                        background: url('../multimedia/img/active/maketplace/heineken.webp');
-                        box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
-                        border-radius: 1rem;
-                        background-position: center;
-                        background-size: 18.5rem;
-                        background-repeat: no-repeat;
-                     }
-                     p{
-                        position: absolute;
-                        top:11.75rem;
-                        left: -3.25rem;
-                        z-index: 9999;
-                        text-align: center;
-                        width:20rem;
-                        font-family: bold;
-                        font-weight: 900;
-                        color: $superwhite;
+                  width:8.25rem;
+                  height: 11.25rem;
+                  box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
+                  border-radius: 1rem;
+                     .__top{
+                        display: flex;
+                        justify-content: flex-start;
+                       align-items: flex-start;
+                        flex-direction: row-reverse;
+                        .hide-plus{
+                           opacity: 0;
+                        }
+                        button{
+                           position: relative;
+                           display: flex;
+                           flex-direction: column;
+                           align-items: center;
+                           outline:none;
+                           border:none;  
+                           margin:.5rem 1.35rem .25rem 1.35rem;
+                           background:transparent;
+
+                           img{
+                                 width:2.25rem;
+                                 height: auto;
+                                 border-radius: 100rem;
+                                 box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
+                              }
                      }
                   }
-                &:hover{
-                  transition: ease-out .25s;
-                   transform: translateY(-.25rem);
-                }
+                     .__bottom{
+                        display: flex;
+                        flex-direction:column;
+                        align-items: center;
+                        img{
+                           width:3.5rem;
+                           height:3.5rem;
+                           box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
+                           border-radius: .75rem;
+                        }
+                        h3{
+                           margin:.5rem 0 .25rem 0;
+                           font-size:1rem;
+                           font-weight: 100;
+                           background: $burple-superlight;
+                           padding:.6rem .8rem;
+                           border-radius: .5rem;
+                        }
+                        p{
+                           opacity: 0;
+                           font-size:.7rem;
+                        }
+                     }
+                  }
+                        }
+                     }
+                  }
             }
-          }
-    }
-
-    }
  
 .__second-marketplace-section{
-margin:0rem 0 .5rem 0;
+margin:1rem 0 .95rem 0;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
 animation: fadeIn ease 1.5s;
 @keyframes fadeIn {
-   0% {opacity:.25;}
+   0% {opacity:0;}
    100% {opacity:1;}
 }
 .__outer-sub-section{
    .__center-title{
-      margin-bottom: .5rem;
+      margin-bottom: .25rem;
+      display: flex;
+      align-items: center;
+      h1{
+         margin-left: .35rem;
+         background: rgb(221, 226, 247);
+         padding:.65rem .85rem;
+         border-radius: .5rem;
+      }
    }
    .__center-sub-section{
-      width:32.75rem; // this should match the carousel widths`
+      width:27rem; // this should match the carousel widths`
       .category__options{
          display: flex;
          width:5rem;
-         height:5rem;
          cursor: pointer;
             .category{
                margin:0 .5rem;
@@ -155,37 +182,49 @@ animation: fadeIn ease 1.5s;
    overflow: hidden;
    animation: fadeIn ease 1.5s;
    @keyframes fadeIn {
-      0% {opacity:.25;}
+      0% {opacity:0;}
       100% {opacity:1;}
    }
    .__outer-sub-section{
       .__center-title{
          display: flex;
-            button{
-               position: relative;
-               padding-top:.125rem;
-               background:transparent;
-               outline:none;
-               border:none;
-              font-size:.8rem;
-              color: $dark-purple;
-              font-family: medium;
-                  &:hover{
-                     transition: ease-in .15s;
-                     cursor: pointer;
-                     color:$burple;
+         align-items: center;
+         h2{
+            margin-left: .35rem;
+            background: $burple-superlight;
+            padding:.6rem .8rem;
+            border-radius: .5rem;
+         }
+         .category{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding:.1rem 0;
+               img{
+                  margin-bottom: .35rem;
+                  width:2.25rem;
+                  height: auto;
+                     &:hover{
+                        border-radius: 100rem;
+                        box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
+                     }
                   }
-           }
+                  h1{
+                     font-size: .6rem;
+                  }
+               }
     }
     .__center-sub-section{
        padding:1rem 0 .5rem 0 ;
        display: flex;
        flex-wrap: no;
        align-self: center;
-       max-width: 32.75rem;
+       max-width: 27rem;
        overflow-x: auto;
        scroll-snap-type: x mandatory;
        scroll-behavior: smooth;
+       overflow-y: hidden;
        -webkit-overflow-scrolling: touch;
        .__advertisement-carousel{
           margin:0 .35rem;
@@ -197,8 +236,8 @@ animation: fadeIn ease 1.5s;
             position: relative;
                img{
                   z-index: 0;
-                  width:10.25rem;
-                  height: 14rem;
+                  width:8.25rem;
+                  height: 11.25rem;
                   background: url('../multimedia/img/active/maketplace/heineken.webp');
                   box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
                   border-radius: 1rem;
@@ -232,22 +271,23 @@ animation: fadeIn ease 1.5s;
    // distance between <h2> and <button>
    // fyi their is padding-top:.125rem applied to all see more btns
    .__third-marketplace-section{
-         button{
-            left:22.6rem;
+         .category{
+            left:16.5rem;
          }
    }
    .__fourth-marketplace-section{
-         button{
-            left:20.45rem;
+         .category{
+            left:14.65rem;
          }
    }
    .__fifth-marketplace-section{
-      button{
-         left:18.95rem;
+      .category{
+         left:13.35rem;
       }
    }
 .__sixth-marketplace-section{
-      button{
-         left:19.60rem;
+      margin-bottom: 3rem;
+      .category{
+         left:14rem;
       }
    }
