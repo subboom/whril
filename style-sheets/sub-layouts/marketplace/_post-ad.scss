@@ -1,5 +1,5 @@
 .__first-adpost-section{
-   margin:7rem 0 1.85rem 0;
+   margin:7rem 0 0rem 0;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -11,9 +11,10 @@
    }
    .__outer-sub-section{
       .__center-title{
-         margin-bottom: .5rem;
+         margin-bottom: .25rem;
       }
       .__center-sub-section{
+         padding-bottom:.5rem;
          width:16.375rem; // this should match the carousel widths`
          overflow-x: auto;
          scroll-snap-type: x mandatory;
