@@ -197,18 +197,20 @@ animation: fadeIn ease 1.5s;
                }
     }
     .__center-sub-section{
-      padding:.75rem 0 .75rem 0 ;
+      padding:1rem 0 .25rem 0 ;
       display: flex;
       flex-wrap: no;
       align-self: center;
       max-width: 26.75rem; // this changes the width of the Trending carousel. 
-                          // please match this width with all carousels below it. 
-      overflow-x: auto;
+      // please match this width with all carousels below it. 
+      overflow-x:auto;
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
       -webkit-overflow-scrolling: touch;
-      
       .__advertisement-carousel{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
          margin:0 .35rem;
          &:hover{
             .inner-carousel{
@@ -236,7 +238,7 @@ animation: fadeIn ease 1.5s;
                     flex-direction: row;
                     
                     button{
-                       margin:.2rem 1.25rem 0 1.25rem;
+                       margin:.2rem 0 0 0rem;
                        position: relative;
                        display: flex;
                        flex-direction: column;
@@ -264,12 +266,15 @@ animation: fadeIn ease 1.5s;
                        margin-top:.75rem;
                        padding:.6rem .8rem;
                        font-size:1rem;
-                       font-weight: 100;
                        background: $burple-superlight;
                        border-radius: .575rem;
                     }
                  }
               }
+                 p{
+                    font-size:.825rem;
+                    padding-top: .5rem;
+                 }
                     }
                  }
    }
