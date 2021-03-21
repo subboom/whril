@@ -1,8 +1,8 @@
-var slider = document.getElementById("myRange");
+var slider2 = document.getElementById("myRange");
 var output = document.getElementById("demo");
-output.innerHTML = slider.value;
+output.innerHTML = slider2.value;
 
-slider.oninput = function() {
+slider2.oninput = function() {
   output.innerHTML = this.value;
 }
 

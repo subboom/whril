@@ -73,6 +73,8 @@
             align-items: center;
             flex-direction: column;   
             opacity: .8; 
+            position: relative;
+            z-index: 999;
                p{
                   padding-top: 1rem;
                   font-family: medium;
