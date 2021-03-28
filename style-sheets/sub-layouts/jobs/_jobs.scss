@@ -1,9 +1,8 @@
 .__first-jobs-section{
+   margin:0 0 20rem 0;
    display: flex;
    justify-content: center;
    .__center-content{
-      margin:1rem 0 0 0;
-
       .__center-title{
          display: flex;
          align-items: center;
@@ -20,13 +19,13 @@
          display: flex;
          flex-direction: column;
          align-items: baseline;
-         padding: 1.15rem 2.5rem;
+         padding: 1.2rem 2.5rem;
          background:transparent;
          outline:none;
          cursor: pointer;
             &:hover{
-               transition: ease-in-out .35s;
-               transform: rotate(0deg) scale(1.125);
+               transition: ease-out 20s;  
+               transform: rotate(0deg) scale(1.15);
                position: relative;
                z-index: 9999;
             }
@@ -69,13 +68,13 @@
        100% { background-position: 0 0; }
        }
 
-         h1,h2,h3{
+         h1,h2,h3, h4{
             font-weight: 100;
          }
          .role{
             display: flex;
-            img{
-               margin-right: .5rem;
+            p{
+               margin-right: .75rem;
                width: 1.5rem;
                height: 1.5rem;
             }
@@ -88,13 +87,17 @@
             display: flex;
             align-items: center;
             flex-direction: row;
-            padding-left: 2.1rem;
+            padding-left: 2.35rem;
             padding-top: .5rem;
             h2{
                font-size: .825rem;
                margin-right: 1.75rem;
             }
             h3{
+               font-size: .825rem;
+               margin-right: 1.75rem;
+            }
+            h4{
                font-size: .825rem;
             }
          }

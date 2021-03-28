@@ -37,7 +37,7 @@
                         height: auto;
                            &:hover{
                               border-radius: 100rem;
-                              box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
+                              box-shadow: 0px 0px 7px -2px $burple-light;
                            }
                         }
                         h1{
@@ -105,7 +105,7 @@
                appearance: none;
                cursor: grabbing;
                background: $burple;
-               box-shadow: -101rem 0 0 100rem $burple-light;
+               box-shadow: -101rem 0 0 100rem $burple;
                }
             }
           }

@@ -94,8 +94,8 @@
 
 .__footer .__center-sub-section .category__options .category img:hover {
   border-radius: 100rem;
-  -webkit-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 7px -2px #788df5;
+          box-shadow: 0px 0px 7px -2px #788df5;
 }
 
 .__footer .__center-sub-section .category__options .category h1 {
@@ -103,7 +103,7 @@
 }
 
 .__footer .__center-sub-section .category__options {
-  margin: 0 0 0 -.5rem;
+  margin: 0 0 0 -.3rem;
 }
 
 header {
@@ -270,6 +270,7 @@ span {
 /* CORE PAGE PROFILE */
 .legal-bubble-1 {
   margin-top: 5rem;
+  padding: 0 2rem;
 }
 
 .legal-bubble-1 .legal-section {
@@ -315,6 +316,7 @@ span {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 1rem 0 12.50rem 0;
+  padding: 0 2rem;
 }
 
 .legal-bubble-2 .legal-section .terms {
@@ -377,6 +379,7 @@ span {
 
 .privacy-bubble-1 {
   margin-top: 5rem;
+  padding: 0 2rem;
 }
 
 .privacy-bubble-1 .privacy-section {
@@ -423,6 +426,7 @@ span {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 1rem 0 12.50rem 0;
+  padding: 0 2rem;
 }
 
 .privacy-bubble-2 .privacy-section .terms {
@@ -485,6 +489,7 @@ span {
 
 .cookies-bubble-1 {
   margin-top: 5rem;
+  padding: 0 2rem;
 }
 
 .cookies-bubble-1 .cookies-section {
@@ -522,6 +527,7 @@ span {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 1rem 0 12.50rem 0;
+  padding: 0 2rem;
 }
 
 .cookies-bubble-2 .cookies-section .terms {
@@ -2515,8 +2521,8 @@ span {
 
 .__first-adpost-section .__outer-sub-section .__center-sub-section .category__options .category img:hover {
   border-radius: 100rem;
-  -webkit-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 7px -2px #A5B1F0;
+          box-shadow: 0px 0px 7px -2px #A5B1F0;
 }
 
 .__first-adpost-section .__outer-sub-section .__center-sub-section .category__options .category h1 {
@@ -2618,8 +2624,8 @@ span {
   cursor: -webkit-grabbing;
   cursor: grabbing;
   background: #788df5;
-  -webkit-box-shadow: -101rem 0 0 100rem #A5B1F0;
-          box-shadow: -101rem 0 0 100rem #A5B1F0;
+  -webkit-box-shadow: -101rem 0 0 100rem #788df5;
+          box-shadow: -101rem 0 0 100rem #788df5;
 }
 
 .__third-adpost-section {
@@ -2890,16 +2896,13 @@ span {
 }
 
 .__first-jobs-section {
+  margin: 0 0 20rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.__first-jobs-section .__center-content {
-  margin: 1rem 0 0 0;
 }
 
 .__first-jobs-section .__center-content .__center-title {
@@ -2933,17 +2936,17 @@ span {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  padding: 1.15rem 2.5rem;
+  padding: 1.2rem 2.5rem;
   background: transparent;
   outline: none;
   cursor: pointer;
 }
 
 .__first-jobs-section .__center-content .jobs-card:hover {
-  -webkit-transition: ease-in-out .35s;
-  transition: ease-in-out .35s;
-  -webkit-transform: rotate(0deg) scale(1.125);
-          transform: rotate(0deg) scale(1.125);
+  -webkit-transition: ease-out 20s;
+  transition: ease-out 20s;
+  -webkit-transform: rotate(0deg) scale(1.15);
+          transform: rotate(0deg) scale(1.15);
   position: relative;
   z-index: 9999;
 }
@@ -2999,7 +3002,7 @@ span {
   }
 }
 
-.__first-jobs-section .__center-content .jobs-card h1, .__first-jobs-section .__center-content .jobs-card h2, .__first-jobs-section .__center-content .jobs-card h3 {
+.__first-jobs-section .__center-content .jobs-card h1, .__first-jobs-section .__center-content .jobs-card h2, .__first-jobs-section .__center-content .jobs-card h3, .__first-jobs-section .__center-content .jobs-card h4 {
   font-weight: 100;
 }
 
@@ -3009,8 +3012,8 @@ span {
   display: flex;
 }
 
-.__first-jobs-section .__center-content .jobs-card .role img {
-  margin-right: .5rem;
+.__first-jobs-section .__center-content .jobs-card .role p {
+  margin-right: .75rem;
   width: 1.5rem;
   height: 1.5rem;
 }
@@ -3030,7 +3033,7 @@ span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-left: 2.1rem;
+  padding-left: 2.35rem;
   padding-top: .5rem;
 }
 
@@ -3040,6 +3043,11 @@ span {
 }
 
 .__first-jobs-section .__center-content .jobs-card .jobs-description h3 {
+  font-size: .825rem;
+  margin-right: 1.75rem;
+}
+
+.__first-jobs-section .__center-content .jobs-card .jobs-description h4 {
   font-size: .825rem;
 }
 
