@@ -2896,13 +2896,16 @@ span {
 }
 
 .__first-jobs-section {
-  margin: 0 0 20rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.__first-jobs-section .__center-content {
+  margin-bottom: 25rem;
 }
 
 .__first-jobs-section .__center-content .__center-title {
