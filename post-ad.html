@@ -85,14 +85,14 @@
 <section class="__second-adpost-section"> 
       <div class="__outer-sub-section">
             <div class="__center-title">
-                  <h2>Price</h2>
+                  <h2>Price <sup>1</sup></h2>
+                  <p>
+                        $<output name="number-692" id="outputnumber692" for="number692">10</output>
+                  </p>  
             </div>
             <div class="__center-sub-section">
                   <div class="__slider">
                         <input id="number692" oninput="outputnumber692.value=addCommas(number692.value)" type="range" lang="en-150" name="number-692" value="0" min="10" max="1000"  step="10" >
-                      <p>
-                        $<output name="number-692" id="outputnumber692" for="number692">10</output> <p2>usd</p2>
-                      </p>  
                   </div>
             </div>
       </div>
@@ -102,19 +102,29 @@
       <div class="__outer-sub-section">
             <div class="__center-title">
                   <h2>Followers</h2>
+                  <p>
+                        <output name="number-691" id="outputnumber691" for="number691">10,000</output>+
+                     </p>  
             </div>
             <div class="__center-sub-section">
                   <div class="__slider">
                         <input id="number691" oninput="outputnumber691.value=addCommas(number691.value)" type="range" lang="en-150" name="number-691" value="0" min="10000" max="1000000" step="10000">
-                      <p>
-                         <output name="number-691" id="outputnumber691" for="number691">10,000</output><p2>+</p2> followers
-                      </p>  
                   </div>
             </div>
       </div>
 </section>
 
 <section class="__fourth-adpost-section"> 
+      <div class="__outer-sub-section">
+            <div class="__center-title">
+                  <h2>Title</h2>
+            </div>
+            <div class="__center-sub-section">
+               <textarea placeholder="Give your post a catchy title" name="" id=""></textarea>
+            </div>
+      </div>
+</section>
+<section class="__fifth-adpost-section"> 
       <div class="__outer-sub-section">
             <div class="__center-title">
                   <h2>Gist</h2>
@@ -124,14 +134,21 @@
             </div>
       </div>
 </section>
-
-<section class="__fifth-adpost-section"> 
+<section class="__sixth-adpost-section"> 
       <div class="__center-sub-section">
             <button onclick="window.location.href='../marketplace.html">
                   <div class="glow-on-hover">
                         POST
                   </div>
             </button>
+      </div>
+</section>
+
+<section class="__last-section-terms">
+      <div class="terms">
+            <p>
+                 <sup>1</sup> All pricing is in $usd</a>.
+            </p>
       </div>
 </section>
 </main>
