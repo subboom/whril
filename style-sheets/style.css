@@ -102,10 +102,6 @@
   font-size: .6rem;
 }
 
-.__footer .__center-sub-section .category__options {
-  margin: 0 0 0 -.3rem;
-}
-
 header {
   position: relative;
   z-index: 99999;
