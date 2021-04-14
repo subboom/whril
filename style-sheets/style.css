@@ -3676,6 +3676,10 @@ span {
   font-weight: 100;
 }
 
+.__first-jobs-section .__center-content .jobs-card h2 {
+  color: #7D7D7D;
+}
+
 .__first-jobs-section .__center-content .jobs-card .role {
   display: -webkit-box;
   display: -ms-flexbox;
