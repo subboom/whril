@@ -106,13 +106,15 @@
                appearance: none;
                background-color: $burple-superlight;
                outline:none;
+               border:none;
                }
-               
                input[type='range']::-webkit-slider-runnable-track {
                   height: 1.15rem;
                   border-radius: 100rem;
                   appearance: none;
                   color: $burple-light;
+                  outline:none;
+                  border:none;
                }
                input[type='range']::-webkit-slider-thumb {
                width: 1.3rem;
@@ -122,6 +124,8 @@
                cursor: grabbing;
                background: $burple;
                box-shadow: -101rem 0 0 100rem $burple-light;
+               outline:none;
+               border:none;
                }
             }
           }
@@ -177,6 +181,7 @@
                appearance: none;
                background-color: $burple-superlight;
                outline:none;
+               border:none;
                }
                
                input[type='range']::-webkit-slider-runnable-track {
@@ -184,6 +189,8 @@
                   border-radius: 100rem;
                   appearance: none;
                   color: $burple-light;
+                  outline:none;
+                  border:none;
                }
                input[type='range']::-webkit-slider-thumb {
                width: 1.3rem;
@@ -193,6 +200,8 @@
                cursor: grabbing;
                background: $burple;
                box-shadow: -101rem 0 0 100rem $burple-light;
+               outline:none;
+               border:none;
                }
             }
           }
@@ -248,6 +257,7 @@
                appearance: none;
                background-color: $burple-superlight;
                outline:none;
+               border:none;
                }
                
                input[type='range']::-webkit-slider-runnable-track {
@@ -255,6 +265,8 @@
                   border-radius: 100rem;
                   appearance: none;
                   color: $burple-light;
+                  outline:none;
+                  border:none;
                }
                input[type='range']::-webkit-slider-thumb {
                width: 1.3rem;
@@ -264,6 +276,8 @@
                cursor: grabbing;
                background: $burple;
                box-shadow: -101rem 0 0 100rem $burple-light;
+               outline:none;
+               border:none;
                }
             }
           }
