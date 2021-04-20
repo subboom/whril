@@ -73,15 +73,18 @@
                padding:.5rem .8rem;
                border-radius: .3rem;
             }
+         .output{
+            align-self: flex-end;
+
             p{
-               position: relative;
-               padding-top: .5rem;
-               left:7.5rem;
+               align-self: center;
             }
             p, output{
                font-size:.9rem;
                color: $dark-purple;
             }
+         }
+          
          }
          .__center-sub-section{
             padding:1rem 0 0 0;
@@ -401,4 +404,25 @@
       }
    }
 
+   @media only screen
+   and (min-width:34rem){
+      .__first-adpost2-section{
+         .__outer-sub-section{
+            .__center-sub-section{
+               width:25rem; // this should match the carousel widths`
+               }
+            }
+         }
+         .__second-adpost2-section{
+            .__outer-sub-section{
+               .__center-sub-section{
+                  .__slider {
+                     input[type='range'] {
+                     width: 25rem;
+                     }
+                  }
+                }
+            }
+         }
+       }
         

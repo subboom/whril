@@ -3151,13 +3151,18 @@ button {
   border-radius: .3rem;
 }
 
-.__second-adpost2-section .__outer-sub-section .__center-title p {
-  position: relative;
-  padding-top: .5rem;
-  left: 7.5rem;
+.__second-adpost2-section .__outer-sub-section .__center-title .output {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
-.__second-adpost2-section .__outer-sub-section .__center-title p, .__second-adpost2-section .__outer-sub-section .__center-title output {
+.__second-adpost2-section .__outer-sub-section .__center-title .output p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.__second-adpost2-section .__outer-sub-section .__center-title .output p, .__second-adpost2-section .__outer-sub-section .__center-title .output output {
   font-size: .9rem;
   color: #2B1951;
 }
@@ -3639,6 +3644,15 @@ button {
   font-weight: 100;
   outline: none;
   border: none;
+}
+
+@media only screen and (min-width: 34rem) {
+  .__first-adpost2-section .__outer-sub-section .__center-sub-section {
+    width: 25rem;
+  }
+  .__second-adpost2-section .__outer-sub-section .__center-sub-section .__slider input[type='range'] {
+    width: 25rem;
+  }
 }
 
 .__first-adpost-section {
