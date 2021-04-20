@@ -2472,7 +2472,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 28.125rem) and (min-width: 0rem) {
+@media only screen and (max-width: 28.125rem) {
   .__first-marketplacebyprice-section .__outer-sub-section .__center-sub-section {
     max-width: 20.75rem;
   }
