@@ -1,5 +1,5 @@
-.__first-marketplace-section{
-    margin:3rem 0 .75rem 0;
+.__first-marketplacebyprice-section{
+    margin:1.5rem 0 .75rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,9 @@
          align-items: center;
          h1{
             margin-left: .35rem;
+            background: $burple-superlight;
+            padding:.6rem .8rem;
+            border-radius: .3rem;
          }
       }
        .__center-sub-section{
@@ -24,7 +27,7 @@
           display: flex;
           flex-wrap: no;
           align-self: center;
-          max-width: 26.75rem; // this changes the width of the Trending carousel. 
+          max-width: 32.5rem; // this changes the width of the Trending carousel. 
           // please match this width with all carousels below it. 
           overflow-x:auto;
           scroll-snap-type: x mandatory;
@@ -35,55 +38,36 @@
              flex-direction: column;
              align-items: center;
              margin:0 .35rem;
-             &:hover{
-                .inner-carousel{
-                   .__bottom{
-                      img{
-                        box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
-                      }
-                   }
-                }
-             }
-            cursor: pointer;
-               .inner-carousel{
+             cursor: pointer;
+               .__inner-carousel{
                   display: flex;
                   flex-direction: column;
                   align-items: center;
                   position: relative;
-                  width:8.25rem;
-                  height: 11.25rem;
-                  box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
+                  width:9.5rem;
+                  height: auto;
+                  padding-bottom: 1rem;
+                  margin-bottom: .35rem;
+                  box-shadow: 0px 0px 7px -2px $burple;
                   border-radius: 1rem;
-                     .__top{
-                        display: flex;
-                        justify-content: flex-start;
-                       align-items: flex-start;
-                        flex-direction: row;
-                        
-                        button{
-                           margin:.2rem 0 0 0rem;
-                           position: relative;
-                           display: flex;
-                           flex-direction: column;
-                           align-items: center;
-                           outline:none;
-                           border:none;  
-                           background:transparent;
-                           img{
-                                 width:2.5rem;
-                                 height: auto;
-                                 border-radius: 100rem;
-                              }
-                     }
-                  }
-                     .__bottom{
-                        margin-top:-.15rem;
+                     .__inner-content{
                         display: flex;
                         flex-direction:column;
                         align-items: center;
+                           .active-selection-content{
+                              display:none;
+                           }
                         img{
-                           width:4.5rem;
+                           margin:1.25rem 0 0 0rem;
+                           width:6rem;
+                           border-radius: .3rem;
+                        }
+                        img:nth-child(2){
+                           margin-top: .75rem;
+                           width:2.75rem;
+                           height: auto;
                            border-radius: 100rem;
+                           box-shadow: 0px 0px 7px -2px $burple;
                         }
                         h3{
                            margin-top:.75rem;
@@ -94,16 +78,54 @@
                         }
                      }
                   }
-                     p{
-                        font-size:.825rem;
-                        padding-top: .5rem;
+               .__outer-carousel{
+                  h2{
+                     padding:.25rem 0 .25rem 0;
+                  }
+                  h2:nth-child(1){
+                     padding-bottom: 0;
+                  }
+               }
+                  &:hover{
+                        .active-selection{
+                                 box-shadow: 0px 0px 7px -2px $burple;
+                                 
+                        .__inner-content{
+                              img{
+                                 opacity: 0;
+                              }
+                              h3{
+                                 opacity: 0;
+                              }
+                              
+                              .active-selection-content{
+                                 display: flex;
+                                 position: absolute;
+                                 top:6.25rem;
+                                 z-index: 1;
+                                 animation: fadeIn ease-in 750ms;
+                                 @keyframes fadeIn {
+                                   0% {opacity:0;}
+                                    100% {opacity:1;}
+                                 }
+                                 h1{
+                                    font-size: 1rem;
+                                    background: $burple-superlight;
+                                    padding:.5rem .5rem;
+                                    border-radius: .3rem;
+                                 }
+                                 
+                              }
+                        }
                      }
+                  }
+
                         }
                      }
                   }
             }
  
-.__second-marketplace-section{
+.__second-marketplacebyprice-section{
 margin:0rem 0 .75rem 0;
 display: flex;
 justify-content: center;
@@ -121,10 +143,13 @@ animation: fadeIn ease 1.5s;
       align-items: center;
       h1{
          margin-left: .35rem;
+         background: $burple-superlight;
+         padding:.6rem .8rem;
+         border-radius: .5rem;
       }
    }
    .__center-sub-section{
-      width: 26.75rem; // this changes the width of the Trending carousel. 
+      width: 32.5rem; // this changes the width of the Trending carousel. 
       .category__options{
          display: flex;
          cursor: pointer;
@@ -140,7 +165,7 @@ animation: fadeIn ease 1.5s;
                      height: auto;
                         &:hover{
                            border-radius: 100rem;
-                           box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
+                           box-shadow: 0px 0px 7px -2px $burple;
                         }
                      }
                      h1{
@@ -152,10 +177,10 @@ animation: fadeIn ease 1.5s;
 }
 }
 
-.__third-marketplace-section,
-.__fourth-marketplace-section,
-.__fifth-marketplace-section,
-.__sixth-marketplace-section{
+.__third-marketplacebyprice-section,
+.__fourth-marketplacebyprice-section,
+.__fifth-marketplacebyprice-section,
+.__sixth-marketplacebyprice-section{
    margin-bottom: 1rem;
    display: flex;
    justify-content: center;
@@ -170,7 +195,7 @@ animation: fadeIn ease 1.5s;
    .__outer-sub-section{
       .__center-title{
          display: flex;
-         align-items: center;
+         justify-content: space-between;
          h2{
             margin-left: .35rem;
             background: $burple-superlight;
@@ -179,20 +204,14 @@ animation: fadeIn ease 1.5s;
          }
          .category{
             padding:.125rem 0;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            align-self: flex-end;
                img{
-                  width:2.25rem;
+                  width:2rem;
                   height: auto;
                      &:hover{
                         border-radius: 100rem;
-                        box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
+                        box-shadow: 0px 0px 7px -2px $burple;
                      }
-                  }
-                  h1{
-                     font-size: .6rem;
                   }
                }
     }
@@ -201,7 +220,7 @@ animation: fadeIn ease 1.5s;
       display: flex;
       flex-wrap: no;
       align-self: center;
-      max-width: 26.75rem; // this changes the width of the Trending carousel. 
+      max-width: 32.5rem; // this changes the width of the Trending carousel. 
       // please match this width with all carousels below it. 
       overflow-x:auto;
       scroll-snap-type: x mandatory;
@@ -212,55 +231,36 @@ animation: fadeIn ease 1.5s;
          flex-direction: column;
          align-items: center;
          margin:0 .35rem;
-         &:hover{
-            .inner-carousel{
-               .__bottom{
-                  img{
-                    box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
-                  }
-               }
-            }
-         }
-        cursor: pointer;
-           .inner-carousel{
+         cursor: pointer;
+           .__inner-carousel{
               display: flex;
               flex-direction: column;
               align-items: center;
               position: relative;
-              width:8.25rem;
-              height: 11.25rem;
-              box-shadow: 0px 0px 7px -2px rgba(0,0,0,0.3);
+              width:9.5rem;
+              height: auto;
+              padding-bottom: 1rem;
+              margin-bottom: .35rem;
+              box-shadow: 0px 0px 7px -2px $burple;
               border-radius: 1rem;
-                 .__top{
-                    display: flex;
-                    justify-content: flex-start;
-                   align-items: flex-start;
-                    flex-direction: row;
-                    
-                    button{
-                       margin:.2rem 0 0 0rem;
-                       position: relative;
-                       display: flex;
-                       flex-direction: column;
-                       align-items: center;
-                       outline:none;
-                       border:none;  
-                       background:transparent;
-                       img{
-                             width:2.5rem;
-                             height: auto;
-                             border-radius: 100rem;
-                          }
-                 }
-              }
-                 .__bottom{
-                    margin-top:-.15rem;
+                 .__inner-content{
                     display: flex;
                     flex-direction:column;
                     align-items: center;
+                       .active-selection-content{
+                          display:none;
+                       }
                     img{
-                       width:4.5rem;
+                       margin:1.25rem 0 0 0rem;
+                       width:6rem;
+                       border-radius: .3rem;
+                    }
+                    img:nth-child(2){
+                       margin-top: .75rem;
+                       width:2.75rem;
+                       height: auto;
                        border-radius: 100rem;
+                       box-shadow: 0px 0px 7px -2px $burple;
                     }
                     h3{
                        margin-top:.75rem;
@@ -271,37 +271,49 @@ animation: fadeIn ease 1.5s;
                     }
                  }
               }
-                 p{
-                    font-size:.825rem;
-                    padding-top: .5rem;
+           .__outer-carousel{
+              h2{
+                 padding:.25rem 0 .25rem 0;
+              }
+              h2:nth-child(1){
+                 padding-bottom: 0;
+              }
+           }
+              &:hover{
+                    .active-selection{
+                             box-shadow: 0px 0px 7px -2px $burple;
+                             
+                    .__inner-content{
+                          img{
+                             opacity: 0;
+                          }
+                          h3{
+                             opacity: 0;
+                          }
+                          
+                          .active-selection-content{
+                             display: flex;
+                             position: absolute;
+                             top:6.25rem;
+                             z-index: 1;
+                             animation: fadeIn ease-in 750ms;
+                             @keyframes fadeIn {
+                               0% {opacity:0;}
+                                100% {opacity:1;}
+                             }
+                             h1{
+                                font-size: 1rem;
+                                background: $burple-superlight;
+                                padding:.5rem .5rem;
+                                border-radius: .3rem;
+                             }
+                             
+                          }
+                    }
                  }
+              }
+
                     }
                  }
    }
    } 
-   // if you change the h2 title word length, you will need 
-   // to fix the padding between the title and "see more" btn
-   // this is exactly what this set of rules does - it creates
-   // distance between <h2> and <button>
-   // fyi their is padding-top:.125rem applied to all see more btns
-   .__third-marketplace-section{
-         .category{
-            left:16.5rem;
-         }
-   }
-   .__fourth-marketplace-section{
-         .category{
-            left:14.65rem;
-         }
-   }
-   .__fifth-marketplace-section{
-      .category{
-         left:13.35rem;
-      }
-   }
-.__sixth-marketplace-section{
-      margin-bottom: 3rem;
-      .category{
-         left:14rem;
-      }
-   }
