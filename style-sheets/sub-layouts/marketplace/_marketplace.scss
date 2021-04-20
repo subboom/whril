@@ -317,3 +317,64 @@ animation: fadeIn ease 1.5s;
                  }
    }
    } 
+
+   @media only screen
+   and (max-width:34rem)
+   and (min-width:28.125rem){
+      .__first-marketplacebyprice-section{
+         .__outer-sub-section{
+            .__center-sub-section{
+               max-width: 26.5rem; // this changes the width of the Trending carousel. 
+               // please match this width with all carousels below it. 
+                           }
+                        }
+            }
+      .__second-marketplacebyprice-section{
+         .__outer-sub-section{
+            .__center-sub-section{
+               width: 26.5rem; // this changes the width of the Trending carousel. 
+               }
+            }
+         }
+      .__third-marketplacebyprice-section,
+      .__fourth-marketplacebyprice-section,
+      .__fifth-marketplacebyprice-section,
+      .__sixth-marketplacebyprice-section{
+         .__outer-sub-section{
+            .__center-sub-section{
+               max-width: 26.5rem; // this changes the width of the Trending carousel. 
+               // please match this width with all carousels below it. 
+                  }
+            }
+         } 
+       }
+   @media only screen
+   and (max-width:28.125rem)
+   and (min-width:0rem){
+      .__first-marketplacebyprice-section{
+         .__outer-sub-section{
+            .__center-sub-section{
+               max-width: 20.75rem; // this changes the width of the Trending carousel. 
+               // please match this width with all carousels below it. 
+                          }
+                       }
+                 }
+      .__second-marketplacebyprice-section{
+         .__outer-sub-section{
+            .__center-sub-section{
+               width: 20.75rem; // this changes the width of the Trending carousel. 
+               }
+            }
+         }
+         .__third-marketplacebyprice-section,
+         .__fourth-marketplacebyprice-section,
+         .__fifth-marketplacebyprice-section,
+         .__sixth-marketplacebyprice-section{
+            .__outer-sub-section{
+               .__center-sub-section{
+                  max-width: 20.75rem; // this changes the width of the Trending carousel. 
+                  // please match this width with all carousels below it. 
+                     }
+               }
+            } 
+   }
