@@ -2105,7 +2105,7 @@ button {
 }
 
 .__second-marketplacebyprice-section {
-  margin: 0rem 0 .75rem 0;
+  margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2195,7 +2195,7 @@ button {
 .__fourth-marketplacebyprice-section,
 .__fifth-marketplacebyprice-section,
 .__sixth-marketplacebyprice-section {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
