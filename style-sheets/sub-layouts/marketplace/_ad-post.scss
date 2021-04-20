@@ -68,14 +68,12 @@
       .__outer-sub-section{
          .__center-title{
             display: flex;
+            justify-content: space-between;
             h2{
                background: $burple-superlight;
                padding:.5rem .8rem;
                border-radius: .3rem;
             }
-         .output{
-            align-self: flex-end;
-
             p{
                align-self: center;
             }
@@ -83,8 +81,6 @@
                font-size:.9rem;
                color: $dark-purple;
             }
-         }
-          
          }
          .__center-sub-section{
             padding:1rem 0 0 0;
@@ -146,15 +142,14 @@
       .__outer-sub-section{
          .__center-title{
             display: flex;
+            justify-content: space-between;
             h2{
                background: $burple-superlight;
                padding:.5rem .8rem;
                border-radius: .3rem;
             }
             p{
-               position: relative;
-               padding-top: .5rem;
-               left:9.25rem;
+               align-self: center;
             }
             p, output{
                font-size:.9rem;
@@ -222,15 +217,14 @@
       .__outer-sub-section{
          .__center-title{
             display: flex;
+            justify-content: space-between;
             h2{
                background: $burple-superlight;
                padding:.5rem .8rem;
                border-radius: .3rem;
             }
             p{
-               position: relative;
-               padding-top: .5rem;
-               left:8.85rem;
+               align-self: center;
             }
             p, output{
                font-size:.9rem;
@@ -404,12 +398,13 @@
       }
    }
 
+
    @media only screen
-   and (min-width:34rem){
+   and (min-width:45rem){
       .__first-adpost2-section{
          .__outer-sub-section{
             .__center-sub-section{
-               width:25rem; // this should match the carousel widths`
+               width:32.5rem; 
                }
             }
          }
@@ -418,11 +413,114 @@
                .__center-sub-section{
                   .__slider {
                      input[type='range'] {
-                     width: 25rem;
+                        width:32.5rem; 
                      }
                   }
                 }
             }
          }
-       }
-        
+         .__third-adpost2-section{
+            .__outer-sub-section{
+               .__center-sub-section{
+                  .__slider {
+                     input[type='range'] {
+                        width:32.5rem; 
+                     }
+                  }
+                }
+            }
+         }
+         .__fourth-adpost2-section{
+            .__outer-sub-section{
+               .__center-sub-section{
+                  .__slider {
+                     input[type='range'] {
+                        width:32.5rem; 
+                     }
+                  }
+                }
+            }
+         }
+         .__fifth-adpost2-section{
+            .__outer-sub-section{
+               .__center-sub-section{
+                     input{
+                        width:32.5rem; 
+                     }
+                  }
+               }
+            }
+            .__sixth-adpost2-section{
+               .__outer-sub-section{
+                  .__center-sub-section{
+                        textarea{
+                           width:32.5rem; 
+                        }
+                     }
+                  }
+               }
+         
+      }
+   @media only screen
+   and (min-width:32.5rem)
+   and (max-width:45rem){
+      .__first-adpost2-section{
+         .__outer-sub-section{
+            .__center-sub-section{
+               width:24rem; 
+               }
+            }
+         }
+         .__second-adpost2-section{
+            .__outer-sub-section{
+               .__center-sub-section{
+                  .__slider {
+                     input[type='range'] {
+                        width:24rem; 
+                     }
+                  }
+                }
+            }
+         }
+         .__third-adpost2-section{
+            .__outer-sub-section{
+               .__center-sub-section{
+                  .__slider {
+                     input[type='range'] {
+                        width:24rem; 
+                     }
+                  }
+                }
+            }
+         }
+         .__fourth-adpost2-section{
+            .__outer-sub-section{
+               .__center-sub-section{
+                  .__slider {
+                     input[type='range'] {
+                     width: 24rem;
+                     }
+                  }
+                }
+            }
+         }
+         .__fifth-adpost2-section{
+            .__outer-sub-section{
+               .__center-sub-section{
+                     input{
+                        width:24rem; 
+                     }
+                  }
+               }
+            }
+            .__sixth-adpost2-section{
+               .__outer-sub-section{
+                  .__center-sub-section{
+                        textarea{
+                           width:24rem; 
+                        }
+                     }
+                  }
+               }
+         
+      }
