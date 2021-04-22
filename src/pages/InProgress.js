@@ -14,22 +14,19 @@ const InProgress = () => (
       <section className="__first-index-section">
         <div className="__left-sub-section">
           <p>
-            Hey, we are still building
-            our product but you can
-            sign up early below.
+            {" Hey, we're still building our product but you can sign up early below. "}
           </p>
         </div>
       </section>
 
       <section className="__second-index-section">
         <div className="form" name="contact" method="POST" data-netlify="true">
-
           <div className="border-top" />
 
           <form action="">
             <label htmlFor="email">
               <p>
-                What is your email?
+                {" What's your email? "}
                 <sup>1</sup>
               </p>
               <input type="email" id="email" />
@@ -51,7 +48,7 @@ const InProgress = () => (
           </form>
 
           <div className="terms">
-            <button type="button" onClick="window.location.href='../';">
+            <button type="button" onClick={() => window.location.reload()}>
               <div className="glow-on-hover">
                 Sign Up
               </div>
@@ -77,16 +74,13 @@ const InProgress = () => (
           <div className="border-top" />
           <p>
             <sup>1</sup>
-            By clicking on sign up you agree to Whril
+            {" By clicking on sign up you agree to Whril's "}
             <a href="../legal/terms-and-conditions/legal.html">Terms and Conditions of Use</a>
             .
           </p>
           <p>
             <sup>1</sup>
-            {' '}
-            To learn more about how Whril collects, uses,
-            shares and protects your personal data please read
-            Whril
+            {" To learn more about how Whril collects, uses, shares and protects your personal data please read Whril's "}
             <a href="../legal/privacy-policy/privacy-policy.html">Privacy Policy</a>
             .
           </p>

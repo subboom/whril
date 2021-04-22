@@ -1,62 +1,27 @@
-// MAIN HEADER NAV BAR //
-header {
-  position: relative;
-  z-index: 99999;
-  margin: 1.5rem 0 0 0;
-  display: flex;
-  justify-content: center;
+// SCSS TOOLS FOR MULTIPLE PAGES //
+@import
+  'base-layout/font-styles',
+  'base-layout/colors',
+  'base-layout/buttons',
+  'base-layout/header-footer/footer',
+  'base-layout/header-footer/header-main',
+  'base-layout/page-profile'; /* CORE PAGE PROFILE */
 
-  .main-logo {
-    a {
-      img {
-        width: 1.5rem;
+// SCSS SINGLE PAGE IMPORTS //
+@import
+  'sub-layouts/legal/legal',
+  'sub-layouts/legal/privacy',
+  'sub-layouts/legal/cookies',
+  'sub-layouts/marketplace/marketplaceslide',
+  'sub-layouts/marketplace/marketplace',
+  'sub-layouts/marketplace/marketplace-old',
+  'sub-layouts/marketplace/ad-post',
+  'sub-layouts/marketplace/ad-post-old',
+  'sub-layouts/jobs/jobs',
+  'sub-layouts/jobs/jobs-page';
 
-        &:hover {
-          animation: shake 1.25s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
-          transform: translate3d(0, 0, 0);
-          backface-visibility: hidden;
-          // perspective: 100%;
-        }
-
-        @keyframes shake {
-          10%,
-          90% {
-            transform: translate3d(-0.5px, 0, 0);
-          }
-
-          20%,
-          80% {
-            transform: translate3d(1px, 0, 0);
-          }
-
-          30%,
-          50%,
-          70% {
-            transform: translate3d(-2px, 0, 0);
-          }
-
-          40%,
-          60% {
-            transform: translate3d(2px, 0, 0);
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 30rem) {
-  header {
-    justify-content: flex-start;
-
-    .main-logo {
-      margin: 0 0 0 0.5rem;
-    }
-  }
-}
-
-.__last-section-terms {
-  margin-bottom: 1rem;
+.__first-index-section {
+  margin: 5rem 0 2.5rem 0;
   display: flex;
   justify-content: center;
   animation: fadeIn ease 1.5s;
@@ -66,30 +31,93 @@ header {
     100% { opacity: 1; }
   }
 
-  .terms {
-    margin: 1rem 2rem 0.75rem 2rem;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    width: 16.4rem;
-
-    .border-top {
-      border-top: 1px solid rgb(236, 236, 236);
-      padding-top: 4.5rem;
-      align-self: center;
-      width: 1.75rem;
-    }
+  .__left-sub-section {
+    align-self: center;
 
     p {
-      padding-bottom: 0.5rem;
-      font-size: 0.725rem;
+      text-align: center;
+      width: 20rem;
+    }
+  }
+}
 
-      a {
-        font-size: 0.775rem;
-        color: rgb(81, 20, 151);
+.__second-index-section {
+  display: flex;
+  justify-content: center;
+  animation: fadeIn ease 1.5s;
+
+  @keyframes fadeIn {
+    0% { opacity: 0.25; }
+    100% { opacity: 1; }
+  }
+
+  .form {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+
+    .border-top {
+      align-self: center;
+      padding-bottom: 0.75rem;
+      width: 1.75rem;
+      border-top: 1px solid rgb(236, 236, 236);
+    }
+
+    @media screen
+      and (max-width: 57.5rem) {
+      width: 13rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        p {
+          color: $dark-purple;
+          padding: 1.5rem 0 0.75rem 0;
+          font-size: 0.8rem;
+        }
+      }
+
+      input,
+      select {
+        align-self: center;
+        padding: 0.65rem 1rem 0.65rem 1rem;
+        outline: none;
+        font-family: book, sans-serif;
+        cursor: pointer;
+        border: 1px solid rgb(219, 219, 219);
+        border-radius: 0.5rem;
+        background: transparent;
+        width: 17.5rem;
+        height: 2.6rem;
+        color: $dark-purple;
+      }
+    }
+
+    .terms {
+      margin: 0.3rem 0 1rem 0;
+      text-align: center;
+
+      button {
+        margin-top: 0.5rem;
+
+        @include glow-effect-btn-sq();
+
+        border-radius: 1rem;
+        font-size: 0.8rem;
+        color: $dark-purple;
+        font-family: medium;
 
         &:hover {
-          // color: $dark-purple;
+          transition: ease-in-out 0.35s;
+          transform: rotate(1.5deg) scale(1.125);
         }
       }
     }
@@ -131,7 +159,8 @@ header {
   }
 }
 
-.__second-index-section {
+.__last-section-terms {
+  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
   animation: fadeIn ease 1.5s;
@@ -141,92 +170,32 @@ header {
     100% { opacity: 1; }
   }
 
-  .form {
-    width: 25rem;
+  .terms {
+    margin: 1rem 2rem 0.75rem 2rem;
+    text-align: left;
     display: flex;
     flex-direction: column;
+    width: 16.4rem;
 
     .border-top {
-      align-self: center;
-      padding-bottom: 0.75rem;
-      width: 1.75rem;
       border-top: 1px solid rgb(236, 236, 236);
+      padding-top: 4.5rem;
+      align-self: center;
+      width: 1.75rem;
     }
-
-    @media screen
-      and (max-width: 57.5rem) {
-      width: 13rem;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-
-      label {
-        p {
-          // color: $dark-purple;
-          padding: 1.5rem 0 0.75rem 0;
-          font-size: 0.8rem;
-        }
-      }
-
-      input,
-      select {
-        align-self: center;
-        padding: 0.65rem 1rem 0.65rem 1rem;
-        outline: none;
-        font-family: book, sans-serif;
-        cursor: pointer;
-        border: 1px solid rgb(219, 219, 219);
-        border-radius: 0.5rem;
-        background: transparent;
-        width: 17.5rem;
-        height: 2.6rem;
-        // color: $dark-purple;
-      }
-    }
-
-    .terms {
-      margin: 0.3rem 0 1rem 0;
-      text-align: center;
-
-      button {
-        margin-top: 0.5rem;
-
-        // @include glow-effect-btn-sq();
-
-        border-radius: 1rem;
-        font-size: 0.8rem;
-        // color: $dark-purple;
-        font-family: medium;
-
-        &:hover {
-          transition: ease-in-out 0.35s;
-          transform: rotate(1.5deg) scale(1.125);
-        }
-      }
-    }
-  }
-}
-
-.__first-index-section {
-  margin: 5rem 0 2.5rem 0;
-  display: flex;
-  justify-content: center;
-  animation: fadeIn ease 1.5s;
-
-  @keyframes fadeIn {
-    0% { opacity: 0.25; }
-    100% { opacity: 1; }
-  }
-
-  .__left-sub-section {
-    align-self: center;
 
     p {
-      text-align: center;
-      width: 20rem;
+      padding-bottom: 0.5rem;
+      font-size: 0.725rem;
+
+      a {
+        font-size: 0.775rem;
+        color: rgb(81, 20, 151);
+
+        &:hover {
+          color: $dark-purple;
+        }
+      }
     }
   }
 }
