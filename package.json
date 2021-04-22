@@ -1,0 +1,23 @@
+{
+  "name": "whril",
+  "version": "1.0.0",
+  "description": "Marketplace for Influencers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whril/whril.git"
+  },
+  "keywords": [
+    "influencer",
+    "marketplace"
+  ],
+  "author": "Chris Signore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whril/whril/issues"
+  },
+  "homepage": "https://github.com/whril/whril#readme"
+}
