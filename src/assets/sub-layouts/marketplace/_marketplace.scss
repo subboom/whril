@@ -1,0 +1,426 @@
+.__first-marketplacebyprice-section {
+  margin: 1.65rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeIn ease 1.5s;
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .__outer-sub-section {
+    margin-bottom: 0.5rem;
+
+    .__center-title {
+      display: flex;
+      align-items: center;
+
+      h1 {
+        margin-left: 0.35rem;
+        background: $burple-superlight;
+        padding: 0.6rem 0.8rem;
+        border-radius: 0.3rem;
+      }
+    }
+
+    .__center-sub-section {
+      padding: 1rem 0 0.25rem 0;
+      display: flex;
+      flex-wrap: no;
+      align-self: center;
+      max-width: 32.5rem; // this changes the width of the Trending carousel.
+      // please match this width with all carousels below it.
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+
+      .__advertisement-carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0.35rem;
+        cursor: pointer;
+
+        .__inner-carousel {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          width: 9.5rem;
+          height: auto;
+          padding-bottom: 1rem;
+          margin-bottom: 0.35rem;
+          box-shadow: 0 0 7px -2px $burple;
+          border-radius: 1rem;
+
+          .__inner-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .active-selection-content {
+              display: none;
+            }
+
+            img {
+              margin: 1.25rem 0 0 0;
+              width: 6rem;
+              border-radius: 0.3rem;
+            }
+
+            img:nth-child(2) {
+              margin-top: 0.75rem;
+              width: 2.75rem;
+              height: auto;
+              border-radius: 100rem;
+              box-shadow: 0 0 7px -2px $burple;
+            }
+
+            h3 {
+              margin-top: 0.75rem;
+              padding: 0.6rem 0.8rem;
+              font-size: 1rem;
+              background: $burple-superlight;
+              border-radius: 0.575rem;
+            }
+          }
+        }
+
+        .__outer-carousel {
+          h2 {
+            padding: 0.25rem 0 0.25rem 0;
+          }
+
+          h2:nth-child(1) {
+            padding-bottom: 0;
+          }
+        }
+
+        &:hover {
+          .active-selection {
+            box-shadow: 0 0 7px -2px $burple;
+
+            .__inner-content {
+              img {
+                opacity: 0;
+              }
+
+              h3 {
+                opacity: 0;
+              }
+
+              .active-selection-content {
+                display: flex;
+                position: absolute;
+                top: 6.25rem;
+                z-index: 1;
+                animation: fadeIn ease-in 750ms;
+
+                @keyframes fadeIn {
+                  0% { opacity: 0; }
+                  100% { opacity: 1; }
+                }
+
+                h1 {
+                  font-size: 1rem;
+                  background: $burple-superlight;
+                  padding: 0.5rem 0.5rem;
+                  border-radius: 0.3rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.__second-marketplacebyprice-section {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn ease 1.5s;
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .__outer-sub-section {
+    .__center-title {
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+
+      h1 {
+        margin-left: 0.35rem;
+        background: $burple-superlight;
+        padding: 0.6rem 0.8rem;
+        border-radius: 0.5rem;
+      }
+    }
+
+    .__center-sub-section {
+      width: 32.5rem; // this changes the width of the Trending carousel.
+      .category__options {
+        display: flex;
+        cursor: pointer;
+
+        .category {
+          margin: 0 0.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0.25rem 0;
+
+          img {
+            margin-bottom: 0.35rem;
+            width: 2.5rem;
+            height: auto;
+
+            &:hover {
+              border-radius: 100rem;
+              box-shadow: 0 0 7px -2px $burple;
+            }
+          }
+
+          h1 {
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.__third-marketplacebyprice-section,
+.__fourth-marketplacebyprice-section,
+.__fifth-marketplacebyprice-section,
+.__sixth-marketplacebyprice-section {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeIn ease 1.5s;
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .__outer-sub-section {
+    .__center-title {
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        margin-left: 0.35rem;
+        background: $burple-superlight;
+        padding: 0.6rem 0.8rem;
+        border-radius: 0.5rem;
+      }
+
+      .category {
+        padding: 0.125rem 0;
+        align-self: flex-end;
+
+        img {
+          width: 2rem;
+          height: auto;
+
+          &:hover {
+            border-radius: 100rem;
+            box-shadow: 0 0 7px -2px $burple;
+          }
+        }
+      }
+    }
+
+    .__center-sub-section {
+      padding: 1rem 0 0.25rem 0;
+      display: flex;
+      flex-wrap: no;
+      align-self: center;
+      max-width: 32.5rem; // this changes the width of the Trending carousel.
+      // please match this width with all carousels below it.
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+
+      .__advertisement-carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0.35rem;
+        cursor: pointer;
+
+        .__inner-carousel {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          width: 9.5rem;
+          height: auto;
+          padding-bottom: 1rem;
+          margin-bottom: 0.35rem;
+          box-shadow: 0 0 7px -2px $burple;
+          border-radius: 1rem;
+
+          .__inner-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .active-selection-content {
+              display: none;
+            }
+
+            img {
+              margin: 1.25rem 0 0 0;
+              width: 6rem;
+              border-radius: 0.3rem;
+            }
+
+            img:nth-child(2) {
+              margin-top: 0.75rem;
+              width: 2.75rem;
+              height: auto;
+              border-radius: 100rem;
+              box-shadow: 0 0 7px -2px $burple;
+            }
+
+            h3 {
+              margin-top: 0.75rem;
+              padding: 0.6rem 0.8rem;
+              font-size: 1rem;
+              background: $burple-superlight;
+              border-radius: 0.575rem;
+            }
+          }
+        }
+
+        .__outer-carousel {
+          h2 {
+            padding: 0.25rem 0 0.25rem 0;
+          }
+
+          h2:nth-child(1) {
+            padding-bottom: 0;
+          }
+        }
+
+        &:hover {
+          .active-selection {
+            box-shadow: 0 0 7px -2px $burple;
+
+            .__inner-content {
+              img {
+                opacity: 0;
+              }
+
+              h3 {
+                opacity: 0;
+              }
+
+              .active-selection-content {
+                display: flex;
+                position: absolute;
+                top: 6.25rem;
+                z-index: 1;
+                animation: fadeIn ease-in 750ms;
+
+                @keyframes fadeIn {
+                  0% { opacity: 0; }
+                  100% { opacity: 1; }
+                }
+
+                h1 {
+                  font-size: 1rem;
+                  background: $burple-superlight;
+                  padding: 0.5rem 0.5rem;
+                  border-radius: 0.3rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen
+  and (max-width: 34rem)
+  and (min-width: 28.125rem) {
+  .__first-marketplacebyprice-section {
+    .__outer-sub-section {
+      .__center-sub-section {
+        max-width: 26.5rem; // this changes the width of the Trending carousel.
+        // please match this width with all carousels below it.
+      }
+    }
+  }
+
+  .__second-marketplacebyprice-section {
+    .__outer-sub-section {
+      .__center-sub-section {
+        width: 26.5rem; // this changes the width of the Trending carousel.
+      }
+    }
+  }
+
+  .__third-marketplacebyprice-section,
+  .__fourth-marketplacebyprice-section,
+  .__fifth-marketplacebyprice-section,
+  .__sixth-marketplacebyprice-section {
+    .__outer-sub-section {
+      .__center-sub-section {
+        max-width: 26.5rem; // this changes the width of the Trending carousel.
+        // please match this width with all carousels below it.
+      }
+    }
+  }
+}
+
+@media only screen
+  and (max-width: 28.125rem) {
+  .__first-marketplacebyprice-section {
+    .__outer-sub-section {
+      .__center-sub-section {
+        max-width: 20.75rem; // this changes the width of the Trending carousel.
+        // please match this width with all carousels below it.
+      }
+    }
+  }
+
+  .__second-marketplacebyprice-section {
+    .__outer-sub-section {
+      .__center-sub-section {
+        width: 20.75rem; // this changes the width of the Trending carousel.
+      }
+    }
+  }
+
+  .__third-marketplacebyprice-section,
+  .__fourth-marketplacebyprice-section,
+  .__fifth-marketplacebyprice-section,
+  .__sixth-marketplacebyprice-section {
+    .__outer-sub-section {
+      .__center-sub-section {
+        max-width: 20.75rem; // this changes the width of the Trending carousel.
+        // please match this width with all carousels below it.
+      }
+    }
+  }
+}
