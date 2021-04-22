@@ -1,0 +1,117 @@
+.__first-marketplace-section {
+  margin: 3rem 0 0.75rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeIn ease 1.5s;
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .__outer-sub-section {
+    margin-bottom: 0.5rem;
+
+    .__center-title {
+      display: flex;
+      align-items: center;
+
+      h1 {
+        margin-left: 0.35rem;
+      }
+    }
+
+    .__center-sub-section {
+      padding: 1rem 0 0.25rem 0;
+      display: flex;
+      flex-wrap: nowrap;
+      align-self: center;
+      max-width: 26.75rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+
+      .__advertisement-carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0.35rem;
+        cursor: pointer;
+
+        .inner-carousel {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          width: 8.25rem;
+          height: 11.25rem;
+          box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.3);
+          border-radius: 1rem;
+
+          .__bottom {
+            margin-top: -0.15rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+              width: 4.5rem;
+              border-radius: 100rem;
+            }
+
+            h3 {
+              margin-top: 0.75rem;
+              padding: 0.6rem 0.8rem;
+              font-size: 1rem;
+              // background: $burple-superlight;
+              border-radius: 0.575rem;
+            }
+          }
+
+          .__top {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: row;
+
+            button {
+              margin: 0.2rem 0 0 0;
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              outline: none;
+              border: none;
+              background: transparent;
+
+              img {
+                width: 2.5rem;
+                height: auto;
+                border-radius: 100rem;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .inner-carousel {
+            .__bottom {
+              img {
+                box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.3);
+              }
+            }
+          }
+        }
+
+        p {
+          font-size: 0.825rem;
+          padding-top: 0.5rem;
+        }
+      }
+    }
+  }
+}

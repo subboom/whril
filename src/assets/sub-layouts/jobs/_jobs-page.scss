@@ -1,0 +1,194 @@
+.first-busdev-bubble {
+  padding: 1.5rem 0 5rem 0;
+  display: flex;
+  justify-content: center;
+
+  .left {
+    margin-right: 7.5rem;
+    width: 32.5rem;
+
+    @media screen
+      and (max-width: 66.25rem) {
+      padding-left: 2.5rem;
+      margin-right: 2.5rem;
+    }
+
+    .upper {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 3rem; //under border line
+      padding-bottom: 4.25rem; // above border line
+      .back-btn {
+        img {
+          width: 0.85rem;
+        }
+
+        a {
+          position: relative;
+          top: -1.15rem;
+          left: 1.25rem;
+          color: $dark-grey;
+          font-size: 0.95rem;
+        }
+
+        &:hover a {
+          opacity: 0.85;
+        }
+
+        &:hover img {
+          transform: translateX(-0.25rem);
+          transition: all 0.35s ease-in-out;
+        }
+      }
+
+      h1 {
+        padding: 1.25rem 0 0.5rem 0;
+        font-family: 'bold';
+        font-size: 2.25rem;
+        color: $dark-purple;
+      }
+
+      .location {
+        padding: 0.5rem 0 1.5rem 0;
+
+        img {
+          width: 1.2rem;
+        }
+
+        h2 {
+          position: relative;
+          top: -1.25rem;
+          left: 1.75rem;
+          font-size: 1.25rem;
+          font-family: book;
+          color: $dark-purple2;
+        }
+      }
+
+      button {
+        @include glow-effect-btn-sq();
+
+        border: 3px solid $black;
+        border-radius: 1rem;
+
+        &:hover {
+          transition: ease-in-out 0.35s;
+          transform: rotate(1.5deg) scale(1.125);
+        }
+      }
+    }
+
+    .lower {
+      p {
+        color: $dark-purple;
+        padding-bottom: 1rem;
+      }
+
+      h2 {
+        padding: 1rem 0;
+        color: $dark-purple2;
+        font-size: 1rem;
+      }
+
+      ul {
+        margin-left: 1.75rem;
+        margin-bottom: 1rem;
+        list-style: disc;
+
+        li {
+          padding: 0.75rem 0 0 1rem;
+          list-style: disc;
+          font-size: 1rem;
+          font-family: book;
+          color: $dark-purple;
+        }
+
+        li:nth-child(1) {
+          padding-top: 0;
+        }
+      }
+
+      button {
+        margin-top: 1.25rem;
+
+        @include glow-effect-btn-sq();
+
+        border: 3px solid $black;
+        border-radius: 1rem;
+
+        &:hover {
+          transition: ease-in-out 0.35s;
+          transform: rotate(1.5deg) scale(1.125);
+        }
+      }
+    }
+  }
+
+  .right {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    max-width: 22.5rem;
+    max-height: 56.25rem;
+    box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.3);
+
+    @media screen
+      and (max-width: 43.5rem) {
+      display: none;
+    }
+
+    .inner-content {
+      padding: 2rem 0 0 2rem;
+
+      img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.75);
+      }
+
+      h1 {
+        margin: 1.25rem 0 2rem 0;
+        font-size: 1.25rem;
+      }
+
+      h2 {
+        margin: 0.5rem 0;
+        font-size: 0.95rem;
+        font-family: bold;
+        color: rgb(151, 151, 151);
+      }
+
+      h3 {
+        color: rgb(151, 151, 151);
+        font-size: 0.95rem;
+        font-family: bold;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        margin-bottom: 2rem;
+        font-size: 0.875rem;
+        padding-right: 3.5rem;
+      }
+
+      .leadership-btn {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: -1.25rem;
+
+        a {
+          font-size: 0.875rem;
+          font-family: bold;
+          color: $dark-purple;
+
+          &:hover {
+            color: $dark-purple2;
+          }
+        }
+
+        p {
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}

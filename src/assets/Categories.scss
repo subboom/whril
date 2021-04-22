@@ -1,0 +1,56 @@
+.__second-marketplace-section {
+  margin: 0 0 0.75rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn ease 1.5s;
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .__outer-sub-section {
+    .__center-title {
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+
+      h1 {
+        margin-left: 0.35rem;
+      }
+    }
+
+    .__center-sub-section {
+      width: 26.75rem; // this changes the width of the Trending carousel.
+      .category__options {
+        display: flex;
+        cursor: pointer;
+
+        .category {
+          margin: 0 0.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0.25rem 0;
+
+          img {
+            margin-bottom: 0.35rem;
+            width: 2.5rem;
+            height: auto;
+
+            &:hover {
+              border-radius: 100rem;
+              box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.3);
+            }
+          }
+
+          h1 {
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}

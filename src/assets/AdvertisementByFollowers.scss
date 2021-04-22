@@ -1,0 +1,177 @@
+
+// if you change the h2 title word length, you will need
+// to fix the padding between the title and "see more" btn
+// this is exactly what this set of rules does - it creates
+// distance between <h2> and <button>
+// fyi their is padding-top:.125rem applied to all see more btns
+
+.__fifth-marketplace-section {
+  .category {
+    left: 13.35rem;
+  }
+}
+
+.__fourth-marketplace-section {
+  .category {
+    left: 14.65rem;
+  }
+}
+
+.__third-marketplace-section {
+  .category {
+    left: 16.5rem;
+  }
+}
+
+.__sixth-marketplace-section {
+  margin-bottom: 3rem;
+
+  .category {
+    left: 14rem;
+  }
+}
+
+.__third-marketplace-section,
+.__fourth-marketplace-section,
+.__fifth-marketplace-section,
+.__sixth-marketplace-section {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeIn ease 1.5s;
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .__outer-sub-section {
+    .__center-title {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        margin-left: 0.35rem;
+        // background: $burple-superlight;
+        padding: 0.6rem 0.8rem;
+        border-radius: 0.5rem;
+      }
+
+      .category {
+        padding: 0.125rem 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          width: 2.25rem;
+          height: auto;
+
+          &:hover {
+            border-radius: 100rem;
+            box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.3);
+          }
+        }
+
+        h1 {
+          font-size: 0.6rem;
+        }
+      }
+    }
+
+    .__center-sub-section {
+      padding: 1rem 0 0.25rem 0;
+      display: flex;
+      flex-wrap: nowrap;
+      align-self: center;
+      max-width: 26.75rem; // this changes the width of the Trending carousel.
+      // please match this width with all carousels below it.
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+
+      .__advertisement-carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0.35rem;
+        cursor: pointer;
+
+        .inner-carousel {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          width: 8.25rem;
+          height: 11.25rem;
+          box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.3);
+          border-radius: 1rem;
+
+          .__bottom {
+            margin-top: -0.15rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+              width: 4.5rem;
+              border-radius: 100rem;
+            }
+
+            h3 {
+              margin-top: 0.75rem;
+              padding: 0.6rem 0.8rem;
+              font-size: 1rem;
+              // background: $burple-superlight;
+              border-radius: 0.575rem;
+            }
+          }
+
+          .__top {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: row;
+
+            button {
+              margin: 0.2rem 0 0 0;
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              outline: none;
+              border: none;
+              background: transparent;
+
+              img {
+                width: 2.5rem;
+                height: auto;
+                border-radius: 100rem;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .inner-carousel {
+            .__bottom {
+              img {
+                box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.3);
+              }
+            }
+          }
+        }
+
+        p {
+          font-size: 0.825rem;
+          padding-top: 0.5rem;
+        }
+      }
+    }
+  }
+}
