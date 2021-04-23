@@ -51,20 +51,20 @@ const categories = [{
 }];
 
 const marketSections = [{
-  class: '__third-marketplace-section',
-  title: '1M+ Followers',
+  class: '__1koffers-section',
+  title: '$1k+ Offers',
   marketPlace,
 }, {
-  class: '__fourth-marketplace-section',
-  title: '500k-1M Followers',
+  class: '__100offers-section',
+  title: '$100+ Offers',
   marketPlace,
 }, {
-  class: '__fifth-marketplace-section',
-  title: 'Under 500k Followers',
+  class: '__10offers-section',
+  title: '$10+ Offers',
   marketPlace,
 }, {
-  class: '__sixth-marketplace-section',
-  title: 'Under 25k Followers',
+  class: '__1offers-section',
+  title: '$1+ Offers',
   marketPlace,
 }];
 

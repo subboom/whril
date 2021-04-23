@@ -1,0 +1,57 @@
+.__categories-section {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn ease 1.5s;
+  
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  
+    .__outer-sub-section {
+      .__center-title {
+        margin-bottom: 0.25rem;
+        display: flex;
+        align-items: center;
+  
+        h1 {
+          margin-left: 0.35rem;
+          background: $burple-superlight;
+          padding: 0.6rem 0.8rem;
+          border-radius: 0.5rem;
+        }
+      }
+  
+      .__center-sub-section {
+        width: 32.5rem; // this changes the width of the Trending carousel.
+        .category__options {
+          display: flex;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+@media only screen
+and (max-width: 34rem)
+and (min-width: 28.125rem) {
+.__categories-section {
+  .__outer-sub-section {
+    .__center-sub-section {
+      width: 26.5rem; // this changes the width of the Trending carousel.
+    }
+  }
+}
+}
+@media only screen
+and (max-width: 28.125rem) {
+.__categories-section {
+  .__outer-sub-section {
+    .__center-sub-section {
+      width: 20.75rem; // this changes the width of the Trending carousel.
+    }
+  }
+}
+}
