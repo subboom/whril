@@ -26,77 +26,94 @@
 
 @import 'InProgress.scss';
 
-*{
+* {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
- }
- html, body {
-    margin:0;
-    padding:0;
-    width:100%;
-    height:100%;
-    background:$superwhite;
-    position: relative;
-    z-index: 1;
-    overflow:hidden;
- }
- body{
-    overflow-y: scroll;
-    user-select: none;
- }
- main{
-    background:$superwhite;
- }
- img {
-  display:block;
-  width:100%;
-  height:auto;
-  outline:none;
-  border:none;
- }
- a{
-    text-decoration:none;
-    font-family: 'book';
- }
- h1{
-    font-size:1.25rem;
-    font-family: medium;
-    font-weight: 100;
-    color:$dark-purple;
-    text-decoration: none;
-    text-shadow: none;
- }
- h2 {
-    font-size:.8rem;
-    font-family:medium;
-    font-weight: 100;
-    color:$dark-purple;
-    text-decoration: none;
-    text-shadow: none;
- }
- h3, h4, h5, h6 {
- font-family: 'medium';
- color:$dark-grey;
- text-shadow:none;
- }
- p {
-   font-family: 'book';
-   font-size:1.1rem;
-   color:$dark-purple;  
-   text-shadow:none;
- }
- ul, ol {
-  list-style:none;
-  margin:0;
- }
- span{
-    font-family: bold;
-    font-size:4rem;
-    color:$dark-purple;
- }
- button{
-    font-size:.8rem;
-    font-family:medium;
-    font-weight: 100;
- }
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: $superwhite;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+body {
+  overflow-y: scroll;
+  user-select: none;
+}
+
+main {
+  background: $superwhite;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'book';
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-family: medium;
+  font-weight: 100;
+  color: $dark-purple;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+h2 {
+  font-size: 0.8rem;
+  font-family: medium;
+  font-weight: 100;
+  color: $dark-purple;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'medium';
+  color: $dark-grey;
+  text-shadow: none;
+}
+
+p {
+  font-family: 'book';
+  font-size: 1.1rem;
+  color: $dark-purple;
+  text-shadow: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+}
+
+span {
+  font-family: bold;
+  font-size: 4rem;
+  color: $dark-purple;
+}
+
+button {
+  font-size: 0.8rem;
+  font-family: medium;
+  font-weight: 100;
+}
