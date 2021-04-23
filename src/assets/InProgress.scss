@@ -1,22 +1,3 @@
-// SCSS TOOLS FOR MULTIPLE PAGES //
-@import
-  'base-layout/font-styles',
-  'base-layout/colors',
-  'base-layout/buttons',
-  'base-layout/header-footer/footer',
-  'base-layout/header-footer/header-main',
-  'base-layout/page-profile'; /* CORE PAGE PROFILE */
-
-// SCSS SINGLE PAGE IMPORTS //
-@import
-  'sub-layouts/legal/legal',
-  'sub-layouts/legal/privacy',
-  'sub-layouts/legal/cookies',
-  'sub-layouts/marketplace/marketplace',
-  'sub-layouts/marketplace/ad-post',
-  'sub-layouts/jobs/jobs',
-  'sub-layouts/jobs/jobs-page';
-
 .__first-index-section {
   margin: 5rem 0 2.5rem 0;
   display: flex;

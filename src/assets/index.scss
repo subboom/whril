@@ -1,31 +1,21 @@
-@import 'Home.scss';
-@import 'TrendingSection.scss';
-@import 'Categories.scss';
-@import 'AdvertisementByFollowers.scss';
-@import 'Footer.scss';
+//GLOBAL
+@import '../assets/scss/global/Fonts.scss',
+        '../assets/scss/global/Colors.scss',
+        '../assets/scss/global/Buttons.scss';
+//COMPONENTS
+@import '../components/shared/Header.scss',
+        '../components/shared/Footer.scss',
+        '../components/shared/Terms.scss',
+        '../components/shared/Privacy.scss',
+        '../components/shared/Cookies.scss';
+//CONTAINERS
+@import '../containers/shared/Header.scss',
+        '../containers/shared/Footer.scss',
+        '../containers/Categories.scss',
+        '../containers/TrendingSection.scss',
+        '../containers/MarketPlaceSection.scss';
+
 @import 'InProgress.scss';
-
-
-/* FONTS */
-@font-face {
-  font-family: 'book';
-  src: url('base-layout/fonts/whril-book.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'medium';
-  src: url('base-layout/fonts/whril-medium.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'bold';
-  src: url('base-layout/fonts/whril-bold.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'arial';
-  src: url('base-layout/fonts/whril-arial.woff2') format('woff2');
-}
 
 * {
   box-sizing: border-box;
