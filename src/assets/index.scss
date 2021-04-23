@@ -1,31 +1,30 @@
-@import 'Home.scss';
-@import 'TrendingSection.scss';
-@import 'Categories.scss';
-@import 'AdvertisementByFollowers.scss';
-@import 'Footer.scss';
+//COMPONNENTS
+@import 
+   '../components/Advertisement.scss',
+   '../components/Category.scss',
+   '../components/Header.scss',
+   '../components/Footer.scss';
+//CONTAINERS
+@import 
+   '../containers/Categories.scss',
+   '../containers/MarketPlaceSection.scss',
+   '../containers/TrendingSection.scss';
+//DATA
+@import
+   '../assets/data/marketplaceSections.scss';
+
+//GLOBAL SCSS
+@import 
+   '../assets/global-scss/Fonts.scss',
+   '../assets/global-scss/Colors.scss',
+   '../assets/global-scss/Buttons.scss';
+//GLOBAL LEGAL
+@import 
+   '../assets/global-scss/legal/Cookies.scss',
+   '../assets/global-scss/legal/Terms.scss',
+   '../assets/global-scss/legal/Privacy.scss';
+
 @import 'InProgress.scss';
-
-
-/* FONTS */
-@font-face {
-  font-family: 'book';
-  src: url('base-layout/fonts/whril-book.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'medium';
-  src: url('base-layout/fonts/whril-medium.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'bold';
-  src: url('base-layout/fonts/whril-bold.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'arial';
-  src: url('base-layout/fonts/whril-arial.woff2') format('woff2');
-}
 
 * {
   box-sizing: border-box;

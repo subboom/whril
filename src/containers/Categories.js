@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { categories } from '../assets/data/marketplaceSections';
 
 const Categories = ({ display }) => (
-  <section className="__second-marketplace-section">
+  <section className="__categories-section">
     <div className="__outer-sub-section">
       <div className="__center-title">
         <h1>Categories</h1>

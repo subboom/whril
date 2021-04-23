@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { marketPlace } from '../assets/data/marketplaceSections';
 
 const TrendingSection = ({ display }) => (
-  <section className="__first-marketplace-section">
+  <section className="__trending-section">
     <div className="__outer-sub-section">
       <div className="__center-title">
         <h1>Trending</h1>
