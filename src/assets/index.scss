@@ -1,28 +1,19 @@
-//COMPONNENTS
-@import 
-   '../components/Advertisement.scss',
-   '../components/Category.scss',
-   '../components/Header.scss',
-   '../components/Footer.scss';
+//GLOBAL
+@import '../assets/scss/global/Fonts.scss',
+        '../assets/scss/global/Colors.scss',
+        '../assets/scss/global/Buttons.scss';
+//COMPONENTS
+@import '../components/shared/Header.scss',
+        '../components/shared/Footer.scss',
+        '../components/shared/Terms.scss',
+        '../components/shared/Privacy.scss',
+        '../components/shared/Cookies.scss';
 //CONTAINERS
-@import 
-   '../containers/Categories.scss',
-   '../containers/MarketPlaceSection.scss',
-   '../containers/TrendingSection.scss';
-//DATA
-@import
-   '../assets/data/marketplaceSections.scss';
-
-//GLOBAL SCSS
-@import 
-   '../assets/global-scss/Fonts.scss',
-   '../assets/global-scss/Colors.scss',
-   '../assets/global-scss/Buttons.scss';
-//GLOBAL LEGAL
-@import 
-   '../assets/global-scss/legal/Cookies.scss',
-   '../assets/global-scss/legal/Terms.scss',
-   '../assets/global-scss/legal/Privacy.scss';
+@import '../containers/shared/Header.scss',
+        '../containers/shared/Footer.scss',
+        '../containers/Categories.scss',
+        '../containers/TrendingSection.scss',
+        '../containers/MarketPlaceSection.scss';
 
 @import 'InProgress.scss';
 
