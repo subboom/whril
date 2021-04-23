@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/index.scss';
+import './assets/scss/global/index.scss';
 
 import InProgress from './pages/InProgress';
 

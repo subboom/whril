@@ -1,22 +1,21 @@
 //GLOBAL
-@import '../assets/scss/global/Fonts.scss',
-        '../assets/scss/global/Colors.scss',
-        '../assets/scss/global/Buttons.scss';
+@import '../global/Buttons.scss',
+        '../global/Colors.scss',
+        '../global/Fonts.scss';
 //COMPONENTS
-@import '../components/shared/Header.scss',
-        '../components/shared/Footer.scss',
-        '../components/shared/Terms.scss',
-        '../components/shared/Privacy.scss',
-        '../components/shared/Cookies.scss';
+@import '../../../components/shared/Header.scss',
+        '../../../components/shared/Footer.scss',
+        '../../../components/shared/Terms.scss',
+        '../../../components/shared/Privacy.scss',
+        '../../../components/shared/Cookies.scss';
 //CONTAINERS
-@import '../containers/shared/Header.scss',
-        '../containers/shared/Footer.scss',
-        '../containers/Categories.scss',
-        '../containers/TrendingSection.scss',
-        '../containers/MarketPlaceSection.scss';
+@import '../../../containers/shared/Header.scss',
+        '../../../containers/shared/Footer.scss',
+        '../../../containers/Categories.scss',
+        '../../../containers/TrendingSection.scss',
+        '../../../containers/MarketPlaceSection.scss';
 
-@import 'InProgress.scss';
-
+@import '../../InProgress.scss';
 * {
   box-sizing: border-box;
   margin: 0;
@@ -108,3 +107,4 @@ button {
   font-family: medium;
   font-weight: 100;
 }
+
