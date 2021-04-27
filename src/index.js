@@ -9,13 +9,17 @@ import {
 } from 'react-router-dom';
 
 import InProgress from './pages/InProgress';
+import Home from './pages/Home';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route path="/">
+        <Route exact path="/">
           <InProgress />
+        </Route>
+        <Route path="/market">
+          <Home />
         </Route>
       </Switch>
     </Router>
