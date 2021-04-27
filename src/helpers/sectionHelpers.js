@@ -1,4 +1,4 @@
-import Advertisement from '../components/marketplace/advertisement';
+import Advertisement from '../components/Advertisement';
 import Category from '../components/Category';
 
 const displaySection = (marketSection) => (
