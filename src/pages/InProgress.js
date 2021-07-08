@@ -36,7 +36,7 @@ const InProgress = () => {
         <section className="__first-index-section">
           <div className="__left-sub-section">
             <p>
-              {" Hey, we're still building our product but you can help us by filling out the survey below! "}
+              {" Hey, we're still building our product but you can help us by filling out our survey below! "}
             </p>
           </div>
         </section>
