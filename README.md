@@ -34,7 +34,6 @@ Please read our contirbuting document when available [CONTRIBUTING.md](https://w
 
 Contributors helping to review/merge pull requests:
 
-- [@defoebrand](https://github.com/DefoeBrand)
 - [@chrissignore](https://github.com/chrissignore)
 
 ## Code of Conduct
