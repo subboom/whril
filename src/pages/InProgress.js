@@ -36,7 +36,7 @@ const InProgress = () => {
         <section className="__first-index-section">
           <div className="__left-sub-section">
             <p>
-              {" Hey, we're still building our product but you can help us by filling out the survey below! "}
+              {" Hey, we're still building our product but you can help us by filling out our survey below! "}
             </p>
           </div>
         </section>
@@ -49,14 +49,14 @@ const InProgress = () => {
                 <form action="">
                   <label htmlFor="user-type">
                     <p>
-                      Who are you?
+                      What do you enjoy doing?
                     </p>
                     <select name="" id="user-type" onChange={(e) => setUserType(e.target.value)}>
                       <option value="company">
-                        Someone with products to advertise
+                        Consuming content
                       </option>
                       <option value="influencer">
-                        Someone who creates content
+                        Creating content
                       </option>
                     </select>
                   </label>
@@ -64,7 +64,7 @@ const InProgress = () => {
                   <div className="terms">
                     <button type="button" onClick={submitForm}>
                       <div className="glow-on-hover">
-                        Share Info
+                       Save
                       </div>
                     </button>
                   </div>
@@ -77,7 +77,7 @@ const InProgress = () => {
           <div className="__center-section">
             <div className="border-top" />
             <p>
-              Ads everyone can enjoy.
+              Enjoy this free ad from our friends:)
             </p>
             <video controls src="./multimedia/vid/y2mate.com - A 500 ad_1080p.mp4">
               <track src="" kind="captions" srcLang="en" label="english_captions" />
