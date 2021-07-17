@@ -1,7 +1,7 @@
 <a href="https://www.whril.com"><p align="center"></a>
 
 <p align="center">
-  <strong>The easiest way to earn 💰</strong>
+  <strong>The easiest way to earn 💸 </strong>
 </p>
 
 <h3 align="center">
@@ -21,8 +21,8 @@
 
 ## Branches
 
-- development -> pr this branch for everything
-- prod -> don't touch, this is what's running live
+- development -> pr this branch for everything new:)
+- prod -> don't touch, this is live
 
 ## Contributions
 
@@ -30,7 +30,7 @@ Whril is open to contributions, but I recommend creating an issue or replying in
 
 Please read our contirbuting document when available [CONTRIBUTING.md](https://www.github.com/) for details on this project.
 
-## Whrilers
+## Whrils
 
 Contributors helping to review/merge pull requests:
 
@@ -47,7 +47,7 @@ Please read our coming soon [CODE_OF_CONDUCT.md](https://github.com/) for detail
 
 ## Why did you make this?
 
-To help fix the ad model, and make it easier for people to get paid. d2c style.
+To create the easiest way to earn online 💸
 
 ## Attribution
 
